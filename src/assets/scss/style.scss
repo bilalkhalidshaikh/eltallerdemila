@@ -1,0 +1,139 @@
+@import "react-multi-carousel/lib/styles.css";
+@import "variables";
+@import "bootstrap-custom";
+@import "components";
+@import "general";
+@import "helper";
+@import "menu";
+@import "home";
+@import "features";
+@import "testi";
+@import "price";
+@import "cta";
+@import "blog";
+@import "work";
+@import "team";
+@import "user";
+@import "countdown";
+@import "contact";
+@import "footer";
+@import "switch";
+@import "dark/variables";
+@import "placeholder";
+@import "plugin-perfect-scrollbar";
+
+.dark-mode {
+  color: $dark;
+  background: $bg-body;
+  * {
+    box-shadow: none !important;
+  }
+  @import "dark/bootstrap-custom";
+  @import "dark/components";
+  @import "dark/general";
+  @import "dark/helper";
+  @import "dark/menu";
+}
+
+.svg-inline--fa {
+  width: 1em !important;
+  max-width: 1em;
+
+  max-height: 1em;
+}
+
+.fa-1x {
+  font-size: 28px;
+}
+
+.fa-2x {
+  width: 2em !important;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+.fa-3x {
+  width: 3em !important;
+  max-width: 3em;
+  max-height: 3em;
+}
+.video-container {
+  height: 250px;
+  display: flex;
+  background-color: $white;
+}
+
+@media only screen and (min-width: 400px) {
+  .video-container {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .video-container {
+    height: 450px;
+  }
+}
+
+.video-container :first-child {
+  margin-left: auto;
+  width: 100%;
+  height: inherit;
+  margin-right: auto;
+}
+
+.arrow1 {
+  animation: slide1 1.5s ease-in-out infinite;
+  margin-left: 9px;
+  transition: 1.5s;
+}
+
+.btn:hover {
+  .arrow1 {
+    animation: none;
+  }
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(7px, 0);
+  }
+}
+
+.course-price {
+  position: "absolute";
+  right: 0;
+  border-radius: 5px 0 0 0;
+  padding: 5px 12px;
+  background-color: $primary;
+  float: right;
+  color: white;
+  transform: translateY(-34px);
+}
+
+.card-columns {
+  column-count: 1;
+  z-index: 1 !important;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 2 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3 !important;
+  }
+}
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 4 !important;
+  }
+}
