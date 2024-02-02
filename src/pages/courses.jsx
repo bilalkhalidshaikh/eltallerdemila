@@ -11,10 +11,10 @@ export default function Courses({ courses, authors }) {
     <Layout>
       <SEO title="All posts" />
       <Header />
-      {/* <h1 className="text-center text-decoration-underline" style={{textDecoration:'underline'}}><ul>Trabajando en ello</ul></h1> */}
-      <BestCourses courses={courses} />
+      <h1 className="text-center text-decoration-underline" style={{textDecoration:'underline'}}><ul>Trabajando en ello</ul></h1>
+      {/* <BestCourses courses={courses} />
       <AllCourses courses={courses} authors={authors} />
-      <Invitation />
+      <Invitation /> */}
 
     </Layout>
   );
