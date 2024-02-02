@@ -6,7 +6,7 @@ import AuthorData from "components/userProfile/AuthorData";
 import Header from "./Hero";
 import PHUserProfile from "./PHUserProfile";
 
-import app from "myFirebase";
+import app,{firestore} from "myFirebase";
 import { doc, getDoc } from "firebase/firestore";
 
 export default function index() {
@@ -16,7 +16,7 @@ export default function index() {
     const urlSearchParams = new URLSearchParams(document.location.search);
     const userId = urlSearchParams.get("id");
 
-    const db = app.firestore();
+    const db = firestore();
     const docRef = doc(db, "profiles", userId);
     const docSnap = await getDoc(docRef);
 

@@ -20,7 +20,7 @@ import DescriptionField from "./DescriptionField";
 import Alerts from "helpers/Alerts";
 import Icons from "components/common/Icons";
 
-import app from "myFirebase";
+import app,{firestore} from "myFirebase";
 import { doc, setDoc } from "firebase/firestore";
 
 function AuthorData(props) {
@@ -42,7 +42,7 @@ function AuthorData(props) {
 
     Alerts.showLoading();
 
-    const db = app.firestore();
+    const db = firestore();
     await setDoc(doc(db, "profiles", user.uid), { ...profile, ...data }).then(
       () => {
         Alerts.showToast("perfil Actualizado");

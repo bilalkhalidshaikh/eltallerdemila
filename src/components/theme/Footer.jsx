@@ -1,6 +1,6 @@
 import Icons from "components/common/Icons";
 import Link from "next/link";
-import React,{Fragment} from "react";
+import React, { Fragment } from "react";
 import { socialIcons, footer, siteMetadata } from "../../../site.config";
 
 export default function Footer({ litle }) {
@@ -10,37 +10,37 @@ export default function Footer({ litle }) {
   const FollowIcon = () => (
     <Fragment>
       {/* <Link href="/contact"> */}
-        <a>
-          <i className="fab fa-facebook-f" />
-        </a>
+      <a>
+        <i className="fab fa-facebook-f" />
+      </a>
       {/* </Link> */}
       {/* <Link href="/contact"> */}
-        <a>
-          <i className="fab fa-twitter" />
-        </a>
+      <a>
+        <i className="fab fa-twitter" />
+      </a>
       {/* </Link> */}
       {/* <Link href="/contact"> */}
-        <a>
-          <i className="fab fa-linkedin-in" />
-        </a>
+      <a>
+        <i className="fab fa-linkedin-in" />
+      </a>
       {/* </Link> */}
       {/* <Link href="/contact"> */}
-        <a>
-          <i className="fab fa-youtube" />
-        </a>
+      <a>
+        <i className="fab fa-youtube" />
+      </a>
       {/* </Link> */}
     </Fragment>
-  )
+  );
   const Courses = () => (
     <Fragment>
       <li>
         {/* <Link href="/course-details"> */}
-          Ballon Coach
+        Ballon Coach
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/course-details"> */}
-          Ballon Event
+        Ballon Event
         {/* </Link> */}
       </li>
       <li>
@@ -64,71 +64,70 @@ export default function Footer({ litle }) {
         {/* </Link> */}
       </li>
     </Fragment>
-  )
+  );
   const Resources = () => (
     <Fragment>
       <li>
         {/* <Link href="/contact"> */}
-          Community
+        Community
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Support
+        Support
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Video Guides
+        Video Guides
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Documentation
+        Documentation
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Security
+        Security
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Courses
+        Courses
         {/* </Link> */}
       </li>
     </Fragment>
-  )
+  );
   const FooterBottom = () => (
     <Fragment>
       <li>
         {/* <Link href="/faqs"> */}
-          Faqs
+        Faqs
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Links
-          {/* </Link> */}
+        Links
+        {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/about"> */}
-          About
+        About
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-          Payments
+        Payments
         {/* </Link> */}
       </li>
     </Fragment>
-  )
+  );
   const CopyRight = () => (
     <p>
-      © {new Date().getFullYear()} <Link href="/"></Link> All rights
-      reserved.
+      © {new Date().getFullYear()} <Link href="/"></Link> All rights reserved.
     </p>
-  )
+  );
   return (
     <>
       {!litle && (
@@ -226,114 +225,135 @@ export default function Footer({ litle }) {
         //     </div>
         //   </div>
         // </footer>
-        <footer className="main-footer bg-black">
-        <div className="container">
-          <div className="row justify-content-between text-white pt-65">
-            <div className="col-lg-3 col-sm-4">
-              <div className="footer-widget about-widget">
-                <h5 className="footer-title">About Us</h5>
-                <p>
-                  Sit amet consectetur adipiscin seeiusmod tempor incididunt ut
-                  dolore magna aliqu asusp disse ultrices gravida commodo
-                </p>
-                <h5 className="pt-5">Follow Us</h5>
-                <div className="social-style-one">
-                  <FollowIcon />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-4">
-              <div className="footer-widget menu-widget">
-                <h5 className="footer-title">Courses</h5>
-                <ul>
-                  <Courses />
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-4">
-              <div className="footer-widget menu-widget">
-                <h5 className="footer-title">Resources</h5>
-                <ul>
-                  <Resources />
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-5">
-              <div className="row">
-                <div className="col-sm-6">
-                  <div className="footer-widget contact-info-widget">
-                    <h5 className="footer-title">Get In Touch</h5>
-                    <ul>
-                      <li>
-                        <i className="fas fa-map-marker-alt" /> 55 Main Street,
-                        2nd Block, Florida
-                      </li>
-                      <li>
-                        <i className="far fa-envelope" />{" "}
-                        <a href="mailto:support@gmail.com">info@eltallerdemila.com</a>
-                      </li>
-                      <li>
-                        <i className="fas fa-phone" />{" "}
-                        <a href="callto:+0123456789">+012 (000) 00 00</a>
-                      </li>
-                      <li>
-                        <i className="far fa-clock" /> Sunday - Friday,
-                        <br /> 08 am - 05 pm
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-sm-6">
-                  <div className="footer-widget newsletter-widget">
-                    <h5 className="footer-title">Newsletter</h5>
-                    <form onSubmit={(e) => e.preventDefault()} action="#">
-                      <h6>Every Single Updates and Notifications</h6>
-                      <div className="email-input">
-                        <label htmlFor="footer-newsletter">
-                          <i className="far fa-envelope" />
-                        </label>
-                        <input
-                          type="email"
-                          id="footer-newsletter"
-                          placeholder="Enter Email"
-                          required=""
-                        />
-                      </div>
-                      <button className="theme-btn style-two" type="submit">
-                        sign up <i className="fas fa-arrow-right" />
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="copyright-area footer-bar footer text-white rel">
+        <footer
+          className="main-footer"
+          style={{ backgroundColor: "#265b3ad0" }}
+        >
           <div className="container">
-            <div className="copyright-inner">
-              <CopyRight />
-              <ul className="footer-menu">
-                <FooterBottom />
-              </ul>
+            <div className="row justify-content-between text-white pt-65">
+              <div className="col-lg-3 col-sm-4">
+                <div className="footer-widget about-widget">
+                  <h5 className="footer-title">About Us</h5>
+                  <p>
+                    Sit amet consectetur adipiscin seeiusmod tempor incididunt
+                    ut dolore magna aliqu asusp disse ultrices gravida commodo
+                  </p>
+                  <h5 className="pt-5">Follow Us</h5>
+                  <div className="social-style-one">
+                    <FollowIcon />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4">
+                <div className="footer-widget menu-widget">
+                  <h5 className="footer-title">Courses</h5>
+                  <ul>
+                    <Courses />
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4">
+                <div className="footer-widget menu-widget">
+                  <h5 className="footer-title">Resources</h5>
+                  <ul>
+                    <Resources />
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-5">
+                <div className="row">
+                  <div className="col-sm-6">
+                    <div className="footer-widget contact-info-widget">
+                      <h5 className="footer-title">Get In Touch</h5>
+                      <ul>
+                        <li>
+                          <i className="fas fa-map-marker-alt" /> 55 Main
+                          Street, 2nd Block, Florida
+                        </li>
+                        <li>
+                          <i className="far fa-envelope" />{" "}
+                          <a href="mailto:support@gmail.com">
+                            info@eltallerdemila.com
+                          </a>
+                        </li>
+                        <li>
+                          <i className="fas fa-phone" />{" "}
+                          <a href="callto:+0123456789">+012 (000) 00 00</a>
+                        </li>
+                        <li>
+                          <i className="far fa-clock" /> Sunday - Friday,
+                          <br /> 08 am - 05 pm
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="footer-widget newsletter-widget">
+                      <h5 className="footer-title">Newsletter</h5>
+                      <form onSubmit={(e) => e.preventDefault()} action="#">
+                        <h6>Every Single Updates and Notifications</h6>
+                        <div className="email-input">
+                          <label htmlFor="footer-newsletter">
+                            <i className="far fa-envelope" />
+                          </label>
+                          <input
+                            type="email"
+                            id="footer-newsletter"
+                            placeholder="Enter Email"
+                            required=""
+                          />
+                        </div>
+                        <button className="theme-btn style-two" type="submit">
+                          sign up <i className="fas fa-arrow-right" />
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <button
-            style={{ display: "inline-block" }}
-            onClick={() => scrollTop()}
-            className="scroll-top scroll-to-target"
-            data-target="html"
+          <div
+            className="copyright-area footer-bar footer text-white rel"
+            style={{
+              background: "#4E795E",
+              borderBottom: ".1px solid #ffffff77",
+              borderTop: ".1px solid #ffffff77",
+            }}
           >
-            <span className="fas fa-angle-double-up" />
-          </button>
-        </div>
-      </footer>
+            <div className="container">
+              <div className="copyright-inner">
+                <CopyRight />
+                <ul className="footer-menu">
+                  <FooterBottom />
+                </ul>
+              </div>
+            </div>
+            <button
+              style={{ display: "inline-block", border: "none" }}
+              onClick={() => scrollTop()}
+              className="scroll-top scroll-to-target"
+              data-target="html"
+            >
+              {/* <span className="fas fa-angle-double-up" /> */}
+              <img
+                src="assets/images/logo-m.png"
+                className="avatar logo"
+                alt=""
+                style={{ height: "auto", width: "auto" }}
+              />
+            </button>
+          </div>
+        </footer>
       )}
-      <footer className="footer footer-bar py-3 ">
+      <footer
+        className="footer footer-bar py-3 "
+        style={{ background: "#4E795E", border: "none" }}
+      >
         <div className="container text-center">
           <div className="row align-items-center">
             <div className="col-sm-12">
-              <div className="text-sm-center">
+              <div className="text-sm-center text-white">
                 <small className={litle ? "mb-0 text-center" : "mb-0"}>
                   ©{new Date().getFullYear()} eltallerdemila.com
                 </small>

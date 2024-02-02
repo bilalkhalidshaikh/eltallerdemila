@@ -70,14 +70,14 @@ export default function CardCourse({ course, author, preview = false }) {
   const CourseCardFooter = () => (
     <CardFooter className="d-flex align-items-center p-2">
       <img
-        alt={author.name}
+        alt={author?.name}
         className="avatar avatar-md-sm rounded-circle shadow-md"
-        src={author.user_pic || "/images/noPic.png"}
+        src={author?.user_pic || "/images/noPic.png"}
       />
       <div className="ml-2">
-        <p className="mb-0 text-dark text-shadow">{author.user_name}</p>
+        <p className="mb-0 text-dark text-shadow">{author?.user_name}</p>
         <p className="small my-0 text-muted">
-          {author.short_description || ""}
+          {author?.short_description || ""}
         </p>
       </div>
     </CardFooter>
@@ -94,12 +94,12 @@ export default function CardCourse({ course, author, preview = false }) {
       {!preview ? (
         <>
           <Link
-            href={`/${course.course_short_link}`}
+            href={`/${course?.course_short_link}`}
             style={{ textDecoration: "none" }}
           >
             <CourseCardBody />
           </Link>
-          <Link href={`/user?id=${author.id}`} className="text-dark">
+          <Link href={`/user?id=${author?.id}`} className="text-dark">
             <CourseCardFooter />
           </Link>
         </>

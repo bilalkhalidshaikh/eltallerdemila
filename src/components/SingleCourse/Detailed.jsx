@@ -1,76 +1,15 @@
+import Link from "next/link";
 import { useState } from "react";
 import { Accordion } from "react-bootstrap";
 import Slider from "react-slick";
+// import "../../assets/css/bootstrap.min.css";
+// import "../../assets/css/style.css";
 // import PageBanner from "../src/components/PageBanner";
 // import WellernAccordion from "../src/components/WellernAccordion";
 // import Layout from "../src/layout/Layout";
 // import { coachSlider } from "../src/sliderProps";
-import Layout from "components/Layout";
-import Link from "next/link";
-import SEO from "components/common/Seo";
 
-const WellernAccordion = ({ title, eventName, children, active, onClick }) => {
-  return (
-    <>
-      <div className="card">
-        <Accordion.Toggle
-          className={`card-header ${active !== eventName ? "collapsed" : ""}`}
-          eventKey={eventName}
-          onClick={() => onClick()}
-        >
-          {title} <span className="toggle-btn" />
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey={eventName}>
-          <div className="card-body">{children}</div>
-        </Accordion.Collapse>
-      </div>
-    </>
-  );
-};
-
-const PageBanner = ({ pageTitle, pageName }) => {
-  return (
-    <section
-      className="page-banner-area rel z-1 text-white text-center"
-      style={{ backgroundImage: "url(assets/images/banner.jpg)" }}
-    >
-      <div className="container">
-        <div className="banner-inner rpt-10">
-          <h2 className="page-title wow fadeInUp delay-0-2s">
-            {pageTitle ? pageTitle : pageName}
-          </h2>
-          <nav aria-label="breadcrumb">
-            <ol className="breadcrumb wow fadeInUp delay-0-4s">
-              <li className="breadcrumb-item">
-                {/* <Link href="/"> */}
-                <a>home</a>
-                {/* </Link> */}
-              </li>
-              <li className="breadcrumb-item active">{pageName}</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-      <img
-        className="circle-one"
-        src="assets/images/shapes/circle-one.png"
-        alt="Circle"
-      />
-      <img
-        className="circle-two"
-        src="assets/images/shapes/circle-two.png"
-        alt="Circle"
-      />
-    </section>
-  );
-};
-const CourseDetails = () => {
-  const [active, setActive] = useState(`collapse1`);
-  const onClick = (value) => {
-    console.log(value);
-    setActive(value === active ? "" : value);
-  };
-  const coachSlider = {
+const coachSlider = {
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
@@ -94,22 +33,40 @@ const CourseDetails = () => {
       },
     ],
   };
-  return (
-    // <>
-    // Working on it..
-    // </>
-    <>
-    <Layout>
-      <SEO title="detalles del curso" />
 
-      <PageBanner pageName={"Course Details"} />
+// const WellernAccordion = ({ title, eventName, children, active, onClick }) => {
+//     return (
+//       <div className="card">
+//         <spanccordion.Toggle
+//           className={`card-header ${active !== eventName ? "collapsed" : ""}`}
+//           eventKey={eventName}
+//           onClick={() => onClick()}
+//         >
+//           {title} <span className="toggle-btn" />
+//         </Accordion.Toggle>
+//         <spanccordion.Collapse eventKey={eventName}>
+//           <div className="card-body">{children}</div>
+//         </Accordion.Collapse>
+//       </div>
+//     );
+//   };
+const Detailed = () => {    
+  const [active, setActive] = useState(`collapse1`);
+  const onClick = (value) => {
+    console.log(value);
+    setActive(value === active ? "" : value);
+  };
+  return (
+    <>
+    {/*  <Layout>
+     <PageBanner pageName={"Course Details"} /> */}
       <section className="course-details-area pt-130 rpt-100">
         <div className="container">
           <div className="row large-gap">
             <div className="col-lg-8">
               <div className="course-details-content">
                 <div className="course-header">
-                  <span className="category">Ballon Design</span>
+                  <span className="category">Web Design</span>
                   <img src="assets/images/shapes/line-shape.png" alt="Line" />
                   <span className="off">30% off</span>
                   <div className="ratting">
@@ -121,18 +78,18 @@ const CourseDetails = () => {
                     <span>(50)</span>
                   </div>
                 </div>
-                <h2>Ballon Decoration Masterclass</h2>
+                <h2>How to Learn Basic Web Design by Photoshop and Figma</h2>
                 <ul className="author-date-enroll">
                   <li>
                     <img
-                      src="assets/images/coachs/couse-author?.jpg"
+                      src="assets/images/coachs/couse-author.jpg"
                       alt="Authro"
                     />
                     <h6>Donald J. Miller</h6>
                   </li>
                   <li>
                     <i className="fas fa-cloud-upload-alt" /> Last Update
-                    January 15, 2024
+                    February 15, 2022
                   </li>
                   <li>
                     <i className="far fa-user" /> 25 Enrolled
@@ -164,26 +121,25 @@ const CourseDetails = () => {
                 <h3 className="mt-40">Requirements</h3>
                 <ul className="list-style-two mb-45">
                   <li>
-                    mosaics, balloon bouquets, helium options, or classical
-                    balloon decor,
+                    DevTools Debugging Tips And Shortcuts (Chrome, Firefox,
+                    Edge)
                   </li>
                   <li>
-                    bouquets and table top options that are perfect for the
-                    DIYers of the world.
+                    Front-End Performance Checklist 2021 (PDF, Apple Pages, MS
+                    Word)
                   </li>
                   <li>
-                    to beautiful and festive helium bunches, Delloons has you
-                    covered.
+                    A Smashing Guide To The World Of Search Engine Optimization
                   </li>
                 </ul>
                 <h3>Target Audience</h3>
                 <ul className="list-style-two mb-45">
-                  <li>Any Job Ballon, Students</li>
+                  <li>Any Job Holders, Students</li>
                   <li>Corporate Trainer</li>
-                  <li>Educators (Art, Design, Faculty)</li>
+                  <li>Educators (Teachers, Lecturer, Faculty)</li>
                 </ul>
-                <h3>Course Curriculum in Ballon Design</h3>
-                <Accordion
+                <h3>Course Curriculum in Web Design</h3>
+                {/* <spanccordion
                   className="faq-accordion pt-10 pb-50 wow fadeInUp delay-0-2s"
                   id="course-faq"
                   defaultActiveKey="collapse1"
@@ -196,49 +152,51 @@ const CourseDetails = () => {
                   >
                     <ul className="course-video-list">
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">What is Ballon Design ?</span>{" "}
+                          <span className="title">What is Web Design ?</span>{" "}
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">18:23</span>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
                           <span className="title">
-                            Difference Between Ballon and Simple Design ?
+                            Diffent Between UX and UI Design ?
                           </span>{" "}
                           <i className="far fa-play-circle" />
                           <span className="duration">35:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">Importance Of Art ?</span>
+                          <span className="title">
+                            Importance Of Typography ?
+                          </span>
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">120:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">What is Rubbins ?</span>
+                          <span className="title">What is Warframe ?</span>
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">13:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </WellernAccordion>
@@ -250,51 +208,51 @@ const CourseDetails = () => {
                   >
                     <ul className="course-video-list">
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">What is Ballon Design ?</span>{" "}
+                          <span className="title">What is Web Design ?</span>{" "}
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">18:23</span>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
                           <span className="title">
-                            Diffent Between Ballon and Simple Design ?
+                            Diffent Between UX and UI Design ?
                           </span>{" "}
                           <i className="far fa-play-circle" />
                           <span className="duration">35:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
-                          // href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                        <span
+                          href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
                           <span className="title">
-                            Importance Of Event Decor ?
+                            Importance Of Typography ?
                           </span>
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">120:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
+                        <span
                           href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">What is Decor ?</span>
+                          <span className="title">What is Warframe ?</span>
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">13:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </WellernAccordion>
@@ -306,55 +264,55 @@ const CourseDetails = () => {
                   >
                     <ul className="course-video-list">
                       <li>
-                        <a
-                          // href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                        <span
+                          href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">What is Ballon Design ?</span>{" "}
+                          <span className="title">What is Web Design ?</span>{" "}
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">18:23</span>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
-                          // href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                        <span
+                          href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
                           <span className="title">
-                            Diffent Between Ballon and Simple Design ?
+                            Diffent Between UX and UI Design ?
                           </span>{" "}
                           <i className="far fa-play-circle" />
                           <span className="duration">35:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
-                          // href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                        <span
+                          href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
                           <span className="title">
-                            Importance Of Event Decor ?
+                            Importance Of Typography ?
                           </span>
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">120:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a
-                          // href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                        <span
+                          href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                           className="mfp-iframe course-video-play"
                         >
-                          <span className="title">What is Decor ?</span>
+                          <span className="title">What is Warframe ?</span>
                           <i className="far fa-play-circle" />{" "}
                           <span className="duration">13:24</span>{" "}
                           <i className="fas fa-lock" />
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </WellernAccordion>
-                </Accordion>
+                </Accordion> */}
                 <h3>Instructors</h3>
                 <div className="course-instructor pt-10 pb-55 wow fadeInUp delay-0-2s">
                   <div className="row align-items-center">
@@ -370,7 +328,7 @@ const CourseDetails = () => {
                       <div className="instructor-details">
                         <h4>John D. Mathews</h4>
                         <span className="designations">
-                          Senior Ballon Designer
+                          Senior Web Designer
                         </span>
                         <div className="ratting mb-10">
                           <i className="fas fa-star" />
@@ -386,26 +344,26 @@ const CourseDetails = () => {
                         </p>
                         <h5>Follow Me</h5>
                         <div className="social-style-two">
-                          {/* <Link href="/contact"> */}
-                          <a>
-                            <i className="fab fa-twitter" />
-                          </a>
-                          {/* </Link> */}
-                          {/* <Link href="/contact"> */}
-                          <a>
-                            <i className="fab fa-facebook-f" />
-                          </a>
-                          {/* </Link> */}
-                          {/* <Link href="/contact"> */}
-                          <a>
-                            <i className="fab fa-instagram" />
-                          </a>
-                          {/* </Link> */}
-                          {/* <Link href="/contact"> */}
-                          <a>
-                            <i className="fab fa-pinterest-p" />
-                          </a>
-                          {/* </Link> */}
+                          <Link href="/contact">
+                            <span>
+                              <i className="fab fa-twitter" />
+                            </span>
+                          </Link>
+                          <Link href="/contact">
+                            <span>
+                              <i className="fab fa-facebook-f" />
+                            </span>
+                          </Link>
+                          <Link href="/contact">
+                            <span>
+                              <i className="fab fa-instagram" />
+                            </span>
+                          </Link>
+                          <Link href="/contact">
+                            <span>
+                              <i className="fab fa-pinterest-p" />
+                            </span>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -431,7 +389,7 @@ const CourseDetails = () => {
                       <div className="student-feedback-details">
                         <div className="student-feedback-author mb-20">
                           <img
-                            src="assets/images/coachs/feedback-author?.jpg"
+                            src="assets/images/coachs/feedback-author.jpg"
                             alt="Authro"
                           />
                           <div className="content">
@@ -527,12 +485,12 @@ const CourseDetails = () => {
                       src="assets/images/widgets/course-details.jpg"
                       alt="Course Details"
                     />
-                    <a
-                      // href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                    <span
+                      href="https://www.youtube.com/watch?v=9Y7ma241N8k"
                       className="mfp-iframe youtube-video-play"
                     >
                       <i className="fas fa-play" />
-                    </a>
+                    </span>
                   </div>
                   <div className="price-off">
                     <span className="price">259.83</span>
@@ -553,87 +511,87 @@ const CourseDetails = () => {
                     </li>
                     <li>
                       <i className="far fa-clipboard" /> <span>Subject</span>{" "}
-                      <b>Ballon Design</b>
+                      <b>Web Design</b>
                     </li>
                     <li>
                       <i className="fas fa-globe" /> <span>Language</span>{" "}
-                      <b>Spanish</b>
+                      <b>English</b>
                     </li>
                   </ul>
                   <p>
                     Sit amet consectetur adipiscin sed eiusmod tempor incidide
                   </p>
-                  {/* <Link href="/contact"> */}
-                  <a className="theme-btn">
-                    add to cart <i className="fas fa-arrow-right" />
-                  </a>
-                  {/* </Link> */}
+                  <Link href="/contact">
+                    <span className="theme-btn">
+                      add to cart <i className="fas fa-arrow-right" />
+                    </span>
+                  </Link>
                   <div className="social-style-two d-flex">
-                    {/* <Link href="/contact"> */}
-                    <a>
-                      <i className="fab fa-twitter" />
-                    </a>
-                    {/* </Link> */}
-                    {/* <Link href="/contact"> */}
-                    <a>
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    {/* </Link> */}
-                    {/* <Link href="/contact"> */}
-                    <a>
-                      <i className="fab fa-instagram" />
-                    </a>
-                    {/* </Link> */}
-                    {/* <Link href="/contact"> */}
-                    <a>
-                      <i className="fab fa-pinterest-p" />
-                    </a>
-                    {/* </Link> */}
+                    <Link href="/contact">
+                      <span>
+                        <i className="fab fa-twitter" />
+                      </span>
+                    </Link>
+                    <Link href="/contact">
+                      <span>
+                        <i className="fab fa-facebook-f" />
+                      </span>
+                    </Link>
+                    <Link href="/contact">
+                      <span>
+                        <i className="fab fa-instagram" />
+                      </span>
+                    </Link>
+                    <Link href="/contact">
+                      <span>
+                        <i className="fab fa-pinterest-p" />
+                      </span>
+                    </Link>
                   </div>
                 </div>
                 <div className="widget widget-menu wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Category</h4>
                   <ul>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Business Ballon </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>Business Coach </span>
+                      </Link>{" "}
                       <span>(25)</span>
                     </li>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Life Coach </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>Life Coach </span>
+                      </Link>{" "}
                       <span>(07)</span>
                     </li>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Health Coach </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>Health Coach </span>
+                      </Link>{" "}
                       <span>(12)</span>
                     </li>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Ballon Design </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>Web Design </span>
+                      </Link>{" "}
                       <span>(55)</span>
                     </li>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Ballon Development </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>Web Development </span>
+                      </Link>{" "}
                       <span>(14)</span>
                     </li>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Ballon Optimizations </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>SEO Optimizations </span>
+                      </Link>{" "}
                       <span>(30)</span>
                     </li>
                     <li>
-                      {/* <Link href="/course-list"> */}
-                      <a>Digital Ballon </a>
-                      {/* </Link>{" "} */}
+                      <Link href="/course-list">
+                        <span>Digital Analysis </span>
+                      </Link>{" "}
                       <span>(18)</span>
                     </li>
                   </ul>
@@ -650,9 +608,9 @@ const CourseDetails = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          {/* <Link href="/course-details"> */}
-                          How to Learn Basic Ballon (UI) Design
-                          {/* </Link> */}
+                          <Link href="/course-details">
+                            How to Learn Basic Web (UI) Design
+                          </Link>
                         </h6>
                         <span>
                           By <Link href="/course-grid">Williams</Link>
@@ -668,9 +626,9 @@ const CourseDetails = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          {/* <Link href="/course-details"> */}
-                          How to Learn Basic Ballon Development
-                          {/* </Link> */}
+                          <Link href="/course-details">
+                            How to Learn Basic Web Development
+                          </Link>
                         </h6>
                         <span>
                           By <Link href="/course-grid">Somalia</Link>
@@ -686,9 +644,9 @@ const CourseDetails = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          {/* <Link href="/course-details"> */}
-                          How to Learn Basic of Decoration
-                          {/* </Link> */}
+                          <Link href="/course-details">
+                            How to Learn Basic (SEO) Marketing
+                          </Link>
                         </h6>
                         <span>
                           By <Link href="/course-grid">Blanchard</Link>
@@ -704,9 +662,9 @@ const CourseDetails = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          {/* <Link href="/course-details"> */}
-                          Event Strategy Managements
-                          {/* </Link> */}
+                          <Link href="/course-details">
+                            Business Strategy Managements
+                          </Link>
                         </h6>
                         <span>
                           By <Link href="/course-grid">Johnson</Link>
@@ -722,7 +680,7 @@ const CourseDetails = () => {
       </section>
       {/* Course Details End */}
       {/* Recent Coach Start */}
-      {/* <section className="coach-section-two rel z-1 pt-120 rpt-90 pb-130 rpb-100">
+      <section className="coach-section-two rel z-1 pt-120 rpt-90 pb-130 rpb-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-7 col-md-8">
@@ -738,11 +696,13 @@ const CourseDetails = () => {
                 <img src="assets/images/coachs/coach1.jpg" alt="Coach" />
               </div>
               <div className="coach-content">
-                <a href="#" className="category">
-                  Ballon Design
-                </a>
+                <span href="#" className="category">
+                  Web Design
+                </span>
                 <h4>
-                  <a href="#">Ballon Decoration Masterclass</a>
+                  <span href="#">
+                    How to Learn Basic Web Design by Photoshop and Figma
+                  </span>
                 </h4>
                 <ul className="coach-footer">
                   <li>
@@ -778,11 +738,13 @@ const CourseDetails = () => {
                 <img src="assets/images/coachs/coach2.jpg" alt="Coach" />
               </div>
               <div className="coach-content">
-                <a href="#" className="category">
-                  Event Ballon
-                </a>
+                <span href="#" className="category">
+                  Development
+                </span>
                 <h4>
-                  <a href="#">Ballon Decoration Masterclass</a>
+                  <span href="#">
+                    How to Learn Web Development by Php and WordPress
+                  </span>
                 </h4>
                 <ul className="coach-footer">
                   <li>
@@ -818,11 +780,13 @@ const CourseDetails = () => {
                 <img src="assets/images/coachs/coach3.jpg" alt="Coach" />
               </div>
               <div className="coach-content">
-                <a href="#" className="category">
-                  Decoration
-                </a>
+                <span href="#" className="category">
+                  Marketing
+                </span>
                 <h4>
-                  <a href="#">Ballon Design Masterclass</a>
+                  <span href="#">
+                    How to Learn Basic Marketing Strategy for Research
+                  </span>
                 </h4>
                 <ul className="coach-footer">
                   <li>
@@ -858,11 +822,13 @@ const CourseDetails = () => {
                 <img src="assets/images/coachs/coach1.jpg" alt="Coach" />
               </div>
               <div className="coach-content">
-                <a href="#" className="category">
-                  Ballon Design
-                </a>
+                <span href="#" className="category">
+                  Web Design
+                </span>
                 <h4>
-                  <a href="#">Ballon Decoration at Event or Party</a>
+                  <span href="#">
+                    How to Learn Basic Web Design by Photoshop and Figma
+                  </span>
                 </h4>
                 <ul className="coach-footer">
                   <li>
@@ -898,11 +864,13 @@ const CourseDetails = () => {
                 <img src="assets/images/coachs/coach2.jpg" alt="Coach" />
               </div>
               <div className="coach-content">
-                <a href="#" className="category">
-                  Ballon
-                </a>
+                <span href="#" className="category">
+                  Development
+                </span>
                 <h4>
-                  <a href="#">Ballon Decoration Masterclass</a>
+                  <span href="#">
+                    How to Learn Web Development by Php and WordPress
+                  </span>
                 </h4>
                 <ul className="coach-footer">
                   <li>
@@ -938,11 +906,13 @@ const CourseDetails = () => {
                 <img src="assets/images/coachs/coach3.jpg" alt="Coach" />
               </div>
               <div className="coach-content">
-                <a href="#" className="category">
-                  Decoration
-                </a>
+                <span href="#" className="category">
+                  Marketing
+                </span>
                 <h4>
-                  <a href="#">Ballon Decoration at Event or Party</a>
+                  <span href="#">
+                    How to Learn Basic Marketing Strategy for Research
+                  </span>
                 </h4>
                 <ul className="coach-footer">
                   <li>
@@ -975,9 +945,10 @@ const CourseDetails = () => {
             </div>
           </Slider>
         </div>
-      </section> */}
-    </Layout>
+      </section>
+    {/* </Layout> */}
     </>
   );
 };
-export default CourseDetails;
+
+export default Detailed;

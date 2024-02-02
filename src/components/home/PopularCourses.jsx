@@ -25,7 +25,7 @@ export default class extends Component {
         </div>
 
         <div className="row">
-          {/* {courses.map((course, index) => (
+          {courses.map((course, index) => (
             <div
               key={index}
               className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 px-2"
@@ -33,11 +33,11 @@ export default class extends Component {
               <SingleCourse
                 course={course}
                 author={authors.find((author) => {
-                  return author.id === course.course_author_id;
+                  return author?.id === course.course_author_id;
                 })}
               />
             </div>
-          ))} */}
+          ))}
           
         </div>
       </div>

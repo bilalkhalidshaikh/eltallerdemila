@@ -5,7 +5,7 @@ import DB from "../../../helpers/db";
 import Link from "next/link";
 import { connect } from "react-redux";
 
-import app from "myFirebase";
+import app,{firestore} from "myFirebase";
 import { doc, getDoc } from "firebase/firestore";
 
 function AuthMenu(props) {
@@ -30,7 +30,7 @@ function AuthMenu(props) {
   openLoginPage;
   const myFunction = async () => {
     if (user && !profile) {
-      const db = app.firestore();
+      const db = firestore();
       const docRef = doc(db, "profiles", user.uid);
       const docSnap = await getDoc(docRef);
 

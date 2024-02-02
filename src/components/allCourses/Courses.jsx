@@ -23,7 +23,7 @@ export default function BestCourses({ courses, authors }) {
             <SingleCourse
               course={course}
               author={authors.find((author) => {
-                return author.id === course.course_author_id;
+                return author?.id === course.course_author_id;
               })}
             />
           </div>

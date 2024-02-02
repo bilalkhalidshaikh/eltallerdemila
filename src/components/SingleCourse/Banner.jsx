@@ -17,15 +17,19 @@ function Banner({ course, authors, paymentReports, items }) {
   //       return report.report_subject.tipe === "course";
   //     })
   //     .find((report, index) => {
-  //       return course._id === report.report_subject._id;
+  //       return course?._id === report.report_subject._id;
   //     });
   // }
 
   const author = authors.find(
-    (author) => author.id === course.course_author_id
+    (author) => author?.id === course?.course_author_id
   );
+  // const author = authors && authors.length > 0
+  //   ? authors.find((author) => author?.id === currentItem?.item_author_id)
+  //   : null;
 
-  const pic_url = author.user_pic ? author.user_pic : "/img/noPic.png";
+
+  const pic_url = author?.user_pic ? author?.user_pic : "/img/noPic.png";
 
   return (
     <section
@@ -51,7 +55,7 @@ function Banner({ course, authors, paymentReports, items }) {
                   position: "relative",
                   boxShadow: "0 2px 55px rgba(47,85,212,0.3) !important",
                 }}
-                src={course.course_pic_url}
+                src={course?.course_pic_url}
               ></CardImg>
             </div>
           </div>
@@ -61,7 +65,7 @@ function Banner({ course, authors, paymentReports, items }) {
                 className="h2 my-4 mt-md-0 text-shadow"
                 style={{ color: "#fff" }}
               >
-                {_.upperFirst(course.course_title)}
+                {_.upperFirst(course?.course_title)}
               </h1>
               <p
                 className="mb-4 mr-5"
@@ -69,13 +73,13 @@ function Banner({ course, authors, paymentReports, items }) {
                 data-aos-delay="200"
                 style={{ color: "#fff" }}
               >
-                {_.upperFirst(course.course_description)}
+                {_.upperFirst(course?.course_description)}
               </p>
             </div>
-            <Link href={`/user?id=${author.id}`}>
+            <Link href={`/user?id=${author?.id}`}>
               <div className="teacher d-flex align-items-center px-2">
                 <img
-                  alt={author.name}
+                  alt={author?.name}
                   className="avatar avatar-md-sm rounded-circle shadow"
                   src={pic_url}
                 />
@@ -83,18 +87,18 @@ function Banner({ course, authors, paymentReports, items }) {
                   <h6
                     className="mb-0 text-shadow"
                     style={{ color: "#fff" }}
-                  >{`${author.user_name}`}</h6>
+                  >{`${author?.user_name}`}</h6>
                   <p
                     className="small my-0 text-muted"
                     style={{ color: "#fff" }}
                   >
-                    {author.short_description || ""}
+                    {author?.short_description || ""}
                   </p>
                 </div>
               </div>
             </Link>
             {items[0] &&
-              (course.course_price > 0 ? (
+              (course?.course_price > 0 ? (
                 !currentReport ? (
                   <PaymentButton course={course} author={author} />
                 ) : (
@@ -109,7 +113,7 @@ function Banner({ course, authors, paymentReports, items }) {
                   <Link
                     href={
                       "/" +
-                      course.course_short_link +
+                      course?.course_short_link +
                       "/" +
                       getShortLink(items[0].item_title)
                     }
@@ -120,7 +124,7 @@ function Banner({ course, authors, paymentReports, items }) {
                         fontSize: 25,
                       }}
                     >
-                      {singleCourse.buttonStartText}
+                      {singlecourse?.buttonStartText}
                       <Icons icon="arrowRight" className="ml-2 arrow1" />
                     </p>
                   </Link>

@@ -17,10 +17,10 @@ export default function Index({ courses, authors }) {
       <SEO title="El Taller de Mila" />
       <Hero />
       <Partners />
-      {/* <section className="mb-5 container">
+      <section className="mb-5 container">
         <PopularCourses courses={courses} authors={authors} />
-      </section> */}
-      <CourseItem/>
+      </section>
+      {/* <CourseItem/> */}
       <NewsLetter/>
       {/* <Invitation /> */}
     </Layout>

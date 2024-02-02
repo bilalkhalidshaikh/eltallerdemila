@@ -183,7 +183,7 @@ export default function Partners() {
                     <li>Premios Mejores Resultados</li>
                   </ul>
                   {/* <Link href="/about"> */}
-                  <a className="theme-btn my-15">
+                  <a className="theme-btn my-15 text-white">
                     Aprende más <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}
@@ -256,7 +256,7 @@ export default function Partners() {
                 </p>
                 <div className="about-btns">
                   {/* <Link href="/about"> */}
-                    <a className="theme-btn my-15">
+                    <a className="theme-btn my-15 text-white">
                     Aprende más <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}

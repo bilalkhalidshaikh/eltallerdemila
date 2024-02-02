@@ -292,7 +292,7 @@ const testimonialthree = {
                 <div className="testimonial-three-item">
                   <div className="image">
                     <img
-                      src="assets/images/testimonials/testi-three-author.png"
+                      src="assets/images/testimonials/testi-three-author?.png"
                       alt="Author"
                     />
                   </div>
@@ -319,7 +319,7 @@ const testimonialthree = {
                 <div className="testimonial-three-item">
                   <div className="image">
                     <img
-                      src="assets/images/testimonials/testi-three-author.png"
+                      src="assets/images/testimonials/testi-three-author?.png"
                       alt="Author"
                     />
                   </div>
@@ -346,7 +346,7 @@ const testimonialthree = {
                 <div className="testimonial-three-item">
                   <div className="image">
                     <img
-                      src="assets/images/testimonials/testi-three-author.png"
+                      src="assets/images/testimonials/testi-three-author?.png"
                       alt="Author"
                     />
                   </div>

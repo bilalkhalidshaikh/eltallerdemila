@@ -4,7 +4,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 import CustomPayment from "./methods/CustomPayment";
 
 export default function ModalDialog({ isOpen, toggle, course, author }) {
-  const pic_url = author.user_pic ? author.user_pic : "/img/noPic.png";
+  const pic_url = author?.user_pic ? author?.user_pic : "/img/noPic.png";
 
   return (
     <Modal isOpen={isOpen} toggle={toggle} className="modal-lg">
@@ -33,16 +33,16 @@ export default function ModalDialog({ isOpen, toggle, course, author }) {
           </div>
           <div className="teacher d-flex align-items-center px-2">
             <img
-              alt={author.name}
+              alt={author?.name}
               className="avatar avatar-md-sm rounded-circle shadow"
               src={pic_url}
             />
             <div className="ml-2">
               <h6 className="mb-0 text-shadow text-left">
-                {author.name ? author.name : `@${author.user_name}`}
+                {author?.name ? author?.name : `@${author?.user_name}`}
               </h6>
               <p className="small my-0 text-muted">
-                {author.short_description || ""}
+                {author?.short_description || ""}
               </p>
             </div>
           </div>
