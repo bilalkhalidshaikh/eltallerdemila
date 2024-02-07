@@ -6,7 +6,7 @@ export default function Header({ title }) {
     <section
       className="bg-profile d-table w-100"
       style={{
-        backgroundColor: "#1a274e",
+        backgroundColor: "#4E795E",
         color: "white",
       }}
     >

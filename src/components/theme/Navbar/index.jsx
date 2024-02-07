@@ -58,42 +58,42 @@ class Navbar extends Component {
             </div>
             <div className="top-right d-flex align-items-center">
               <div className="social-style-two">
-                <Link href="/contact">
+                {/* <Link href="/contact"> */}
                   <a>
                     <i className="fab fa-twitter" />
                   </a>
-                </Link>
-                <Link href="/contact">
+                {/* </Link> */}
+                {/* <Link href="/contact"> */}
                   <a>
                     <i className="fab fa-facebook-f" />
                   </a>
-                </Link>
-                <Link href="/contact">
+                {/* </Link> */}
+                {/* <Link href="/contact"> */}
                   <a>
                     <i className="fab fa-instagram" />
                   </a>
-                </Link>
-                <Link href="/contact">
+                {/* </Link> */}
+                {/* <Link href="/contact"> */}
                   <a>
                     <i className="fab fa-pinterest-p" />
                   </a>
-                </Link>
+                {/* </Link> */}
               </div>
               <ul className="top-menu">
                 <li>
-                  <Link href="/about">
+                  {/* <Link href="/about"> */}
                     <a>Setting &amp; Privacy</a>
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li>
-                  <Link href="/faqs">
+                  {/* <Link href="/faqs"> */}
                     <a>Faqs</a>
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li>
-                  <Link href="/about">
+                  {/* <Link href="/about"> */}
                     <a>About</a>
-                  </Link>
+                  {/* </Link> */}
                 </li>
               </ul>
             </div>
@@ -116,7 +116,7 @@ class Navbar extends Component {
           //  style={{ height: 80 }}
            >
             <div className="logo my-auto">
-              <Link href="/">
+              {/* <Link href="/"> */}
               {/* <div className="col-lg-2 col-md-2 col-6 text-center py-4"> */}
           {/* </div> */}
                 {/* <h4
@@ -128,6 +128,7 @@ class Navbar extends Component {
                       : "m-0 white"
                     }
                 > */}
+                <Link href={"https://eltallerdemila.com/"}>
                     <img
                       src="assets/images/logo-m.png"
                       className="avatar logo"
@@ -135,6 +136,7 @@ class Navbar extends Component {
                       style={{height:120,width:120}}
 
                     />
+                </Link>
                     
                   {/* <Icons
                     icon="code"
@@ -147,7 +149,7 @@ class Navbar extends Component {
                     JSON.stringify(isDark)} */}
                   {/* {siteMetadata.title} */}
                 {/* </h4> */}
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
 

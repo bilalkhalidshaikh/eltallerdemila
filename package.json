@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-blog-starter",
+  "name": "eltallerdemila",
   "version": "0.2.0",
-  "description": "A Next.js template for a blog website.",
+  "description": "eltallerdemila | Learn the art of balloons  ",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,6 +22,7 @@
     "firebase-admin": "^12.0.0",
     "firebaseui": "^6.0.2",
     "html-react-parser": "^3.0.16",
+    "iframe-resizer-react": "^1.1.0",
     "imagemin-optipng": "^8.0.0",
     "isotope-layout": "^3.0.6",
     "lodash": "^4.17.21",

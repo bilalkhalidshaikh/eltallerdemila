@@ -27,7 +27,9 @@ export default function login() {
         <div
           className="bg-overlay "
           style={{
-            backgroundColor: "#1a274e",
+            // backgroundColor: "#1a274e",
+            backgroundColor: "#4E795E",
+            
             zIndex: -1,
           }}
         ></div>

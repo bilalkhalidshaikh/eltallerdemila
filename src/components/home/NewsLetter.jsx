@@ -71,7 +71,11 @@ const testimonialthree = {
               <div className="newsletter-content bg-lighter">
                 <div className="section-title mb-20">
                   <span className="sub-title mb-25">BOLETINES</span>
-                  <h2>Reciba todas nuestras notificaciones</h2>
+                  <h1>
+                    <b>
+                    Reciba todas nuestras notificaciones
+                    </b>
+                  </h1>
                 </div>
                 <p>
                   Sit amet consectetur adipiscinelit eiusmod tempor incididunt
@@ -142,7 +146,11 @@ const testimonialthree = {
             <div className="col-xl-6 col-lg-7 col-md-8">
               <div className="section-title text-center mb-55">
                 <span className="sub-title mb-20">Noticias &amp; Blog</span>
-                <h2>Lea alguna tienda sobre noticias y noticias Blog</h2>
+                <h1>
+                  <b>
+                  Lea alguna tienda sobre noticias y noticias Blog
+                  </b>
+                  </h1>
               </div>
             </div>
           </div>
@@ -158,19 +166,23 @@ const testimonialthree = {
                   </span>
                   <div className="content">
                     <h4>
-                      <Link 
-                      href="/">
+                      {/* <Link 
+                      href="/"> */}
                     ¡Tú lo sueñas, nosotros lo diseñamos e instalamos! Desde guirnaldas de globos orgánicos, paredes de globos,
-                      </Link>
+                      {/* </Link> */}
                     </h4>
                     <ul className="blog-meta">
                       <li>
                         <i className="far fa-user" />{" "}
-                        <Link href="/blog">By Somalia</Link>
+                        {/* <Link href="/blog"> */}
+                          By Somalia
+                          {/* </Link> */}
                       </li>
                       <li>
                         <i className="far fa-comments" />{" "}
-                        <Link href="/blog">Comments (5)</Link>
+                        {/* <Link href="/blog"> */}
+                          Comments (5)
+                          {/* </Link> */}
                       </li>
                     </ul>
                   </div>
@@ -190,17 +202,21 @@ const testimonialthree = {
                     <ul className="blog-meta">
                       <li>
                         <i className="far fa-user" />{" "}
-                        <Link href="/blog">By Somalia</Link>
+                        {/* <Link href="/blog"> */}
+                          By Somalia
+                          {/* </Link> */}
                       </li>
                       <li>
                         <i className="far fa-comments" />{" "}
-                        <Link href="/blog">Com (5)</Link>
+                        {/* <Link href="/blog"> */}
+                          Com (5)
+                          {/* </Link> */}
                       </li>
                     </ul>
                     <h5>
-                      <Link href="/">
+                      {/* <Link href="/"> */}
                       Hemos simplificado su planificación
-                      </Link>
+                      {/* </Link> */}
                     </h5>
                     <p>
                       Sit amet consectetur adiscins eiusmod tempor incididunt
@@ -227,17 +243,21 @@ const testimonialthree = {
                     <ul className="blog-meta">
                       <li>
                         <i className="far fa-user" />{" "}
-                        <Link href="/blog">By Somalia</Link>
+                        {/* <Link href="/blog"> */}
+                          By Somalia
+                          {/* </Link> */}
                       </li>
                       <li>
                         <i className="far fa-comments" />{" "}
-                        <Link href="/blog">Com (5)</Link>
+                        {/* <Link href="/blog"> */}
+                          Com (5)
+                          {/* </Link> */}
                       </li>
                     </ul>
                     <h5>
-                      <Link href="/blog-details">
+                      {/* <Link href="/blog-details"> */}
                       Our helium options are here to stay! 
-                      </Link>
+                      {/* </Link> */}
                     </h5>
                     <p>
                       Sit amet consectetur adiscins eiusmod tempor incididunt
@@ -271,7 +291,12 @@ const testimonialthree = {
                   <span className="sub-title-three">
                   Clientas Tes<span>timonials</span>
                   </span>
-                  <h2>La opinión de la gente sobre nuestros cursos</h2>
+                  <h1>
+                    <b>
+
+                    La opinión de la gente sobre nuestros cursos
+                    </b>
+                    </h1>
                 </div>
                 <p>
                   Rem aperiam eaque ipsa quae abillo inventore veritatis

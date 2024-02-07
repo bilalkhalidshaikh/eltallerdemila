@@ -8,14 +8,14 @@ export default class extends Component {
     const { courses, authors } = this.props;
 
     return (
-      <div className="mt-5 p-0 mx-4">
+      <div className="mt-5 p-0 mx-14">
         <div className="row justify-content-center">
           <div className="col-12">
             <div className="section-title text-center mb-4">
               {/* <h2 className="mb-2">{popularCourses.title}</h2> */}
               <div className="section-title mb-40">
                     <span className="sub-title mb-25">Curso en vídeo</span>
-                    <h2>{popularCourses.title}</h2>
+                    <h1><b>{popularCourses.title}</b></h1>
               <p className="text-muted para-desc mb-0 mx-auto">
                 {popularCourses.subTitle}
               </p>
@@ -24,7 +24,7 @@ export default class extends Component {
           </div>
         </div>
 
-        <div className="row">
+        {/* <div className="row">
           {courses.map((course, index) => (
             <div
               key={index}
@@ -39,7 +39,8 @@ export default class extends Component {
             </div>
           ))}
           
-        </div>
+        </div> */}
+        <br/>
       </div>
     );
   }

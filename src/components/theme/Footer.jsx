@@ -340,7 +340,7 @@ export default function Footer({ litle }) {
                 src="assets/images/logo-m.png"
                 className="avatar logo"
                 alt=""
-                style={{ height: "auto", width: "auto" }}
+                style={{ height: "55px", width: "55px" }}
               />
             </button>
           </div>

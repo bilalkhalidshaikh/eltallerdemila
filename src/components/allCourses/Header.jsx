@@ -19,7 +19,7 @@ export default function Hero() {
           <div
             className="rounded py-4 pb-4 px-3 px-sm-0 shadow-md"
             style={{
-              backgroundColor: "#1a274e",
+              backgroundColor: "#4E795E",
             }}
           >
             <div className="row">

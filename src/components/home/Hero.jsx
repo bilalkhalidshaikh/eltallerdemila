@@ -197,7 +197,7 @@ export default function Hero() {
       </section> */}
 
       {/* Hero Section Start */}
-      <section className="hero-section-three bg-lighter rel z-1 pt-80 rpt-150">
+      <section className="hero-section-three bg-lighter rel z-1 pt-180 rpt-150">
         <div className="container">
           <div className="row large-gap">
             <div className="col-lg-6 align-self-end">
@@ -231,23 +231,23 @@ export default function Hero() {
                 <span className="hero-sub-title mb-10 wow fadeInUp delay-0-2s">
                   <span>24+</span> estudiantes
                 </span>
-                <h1 className="mb-25 wow fadeInUp delay-0-4s">
+                <h1 className="mb-25 wow fadeInUp delay-0-4s fw-12" style={{fontWeight:'32px !important'}}>
                   {/* We’re Best <span>Online</span> Education Partners University
                   2022 */}
-                 Aprenda el arte <span>de los globos.</span>
+                 <b>Aprenda el arte <span>de los globos.</span></b>
                 </h1>
                 <ul className="list-style-one wow fadeInUp delay-0-6s">
-                  <li>Expertas Asesoras</li>
+                  <li style={{fontWeight:'12px'}}>Expertas Asesoras</li>
                   <li>5+ Cursos</li>
                 </ul>
                 <div className="hero-btns mt-10 wow fadeInUp delay-0-8s">
                   {/* <Link href="/contact"> */}
-                    <a className="theme-btn mt-10 text-white">
+                    <a className="theme-btn mt-10 text-white" href="https://eltallerdemila.com/login/">
                       Get started <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}
                   {/* <Link href="/course-grid"> */}
-                    <a className="theme-btn style-two text-black bg-white mt-10">
+                    <a className="theme-btn style-two text-black bg-white mt-10" href="https://eltallerdemila.com/">
                      <span >our courses</span>  <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}

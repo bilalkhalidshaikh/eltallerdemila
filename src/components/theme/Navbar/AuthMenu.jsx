@@ -58,9 +58,9 @@ function AuthMenu(props) {
               <div className="buy-button p-0 m-0 mr-2">
                 <a
                   className="btn btn-primary my-0 p-2"
-                  href="/register"
+                  href="https://eltallerdemila.com/login/"
                   target="_blank"
-                  onClick={openRegisterPage}
+                  // onClick={openRegisterPage}
                 >
                   Registrarme...
                 </a>
@@ -72,9 +72,9 @@ function AuthMenu(props) {
               <div className="buy-button p-0 ml-0">
                 <a
                   className="btn btn-light text-dark my-0 p-2"
-                  href="/login"
+                  href="https://eltallerdemila.com/login/"
                   target="_blank"
-                  onClick={openLoginPage}
+                  // onClick={openLoginPage}
                 >
                   Iniciar sesion
                 </a>

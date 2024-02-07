@@ -19,13 +19,13 @@ export default function login() {
 
   return (
     <>
-      <div
+      <div 
         className="d-flex"
         style={{
           width: "100%",
           height: "100vh",
 
-          backgroundColor: "#1a274e",
+          backgroundColor: "#4E795E",
           zIndex: -1,
         }}
       >

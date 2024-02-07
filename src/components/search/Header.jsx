@@ -19,7 +19,7 @@ export default function Hero({ word }) {
           <div
             className="rounded py-5 pb-5 px-3 px-sm-0 shadow-md"
             style={{
-              backgroundColor: "#1a274e",
+              backgroundColor: "#4E795E",
             }}
           >
             <div className="container">

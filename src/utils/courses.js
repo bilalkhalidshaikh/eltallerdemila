@@ -159,32 +159,46 @@ export const getAllCourses = async () => {
 };
 
 
+// export const getAllAuthors = async (courses) => {
+//   let profiles = [];
+//   let authorIds = courses.map((course) => course.course_author_id);
+//   authorIds = [...new Set(authorIds)];
+
+//   // const querySnapshot = await getDocs(collection(firestore, "profiles"));
+//   const querySnapshot = await getDocs(collection(firestore, "authors"));
+//   querySnapshot.forEach((doc) => {
+//     const profile = { ...doc.data(), id: doc.id };
+//     profiles.push(profile);
+//   });
+
+//   return profiles;
+// };
+
 export const getAllAuthors = async (courses) => {
-  let profiles = [];
+  let authors = [];
   let authorIds = courses.map((course) => course.course_author_id);
   authorIds = [...new Set(authorIds)];
 
-  // const querySnapshot = await getDocs(collection(firestore, "profiles"));
   const querySnapshot = await getDocs(collection(firestore, "authors"));
   querySnapshot.forEach((doc) => {
-    const profile = { ...doc.data(), id: doc.id };
-    profiles.push(profile);
+    const author = { ...doc.data(), id: doc.id };
+    authors.push(author);
   });
 
-  return profiles;
+  return authors;
 };
 
 
 export const getItems = async (course) => {
   let items = [];
-  if (!course || !course.id) {
+  if (!course || !course.course_author_id) {
     console.error("Course ID is undefined.");
     return items;
   }
   const querySnapshot = await getDocs(
     query(
       collection(firestore, "course_items"),
-      where("item_course_id", "==", course.id) // Make sure 'item_course_id' matches the course ID structure
+      where("item_course_id", "==", course.course_author_id) // Use the course_author_id instead
     )
   );
   querySnapshot.forEach((doc) => {

@@ -7,7 +7,7 @@ const siteMetadata = {
     summary: "eltallerdemila",
   },
   description: "El Taller de Mila Ballon Decoration - Blow Up Your Balloon Design Skills with Us",
-  siteUrl: "https://nextjs-starter-blog-demo.netlify.app/",
+  siteUrl: "https://eltallerdemila.com/",
   language: "es-ES",
   social: {
     twitter: "eltallerdemila",
@@ -55,10 +55,10 @@ const socialIcons = [
 ];
 
 const navbarLinks = [
-  { title: "El Taller de Mila", url: "/" },
-  { title: "Courses", url: "/courses" },
+  { title: "El Taller de Mila", url: "https://eltallerdemila.com/" },
+  { title: "Courses", url: "https://eltallerdemila.com/" },
   // { title: "Blog", url: "/blog" },
-  { title: "Blog", url: "/" },
+  { title: "About", url: "https://eltallerdemila.com/" },
 
   // {
   //   title: "Cursos",

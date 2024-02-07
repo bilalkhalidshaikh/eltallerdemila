@@ -37,19 +37,20 @@ export default function CourseItem(){
     return(
         <>
          {/* Coach Section Start */}
-      <section className="coach-section-two bg-light-two rel z-1 pt-185 rpt-150 pb-130 rpb-100">
+      <section className="coach-section-two bg-white rel z-1 pt-185 rpt-150 pb-130 rpb-100">
         <div className="container for-circle rpt-5">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-7 col-md-8">
               <div className="section-title text-center mb-50">
-                <span className="sub-title-three">
+                <span className="sub-title-three" style={{fontSize:'20px'}}>
                 Nuestro último <span>Cursos</span>
                 </span>
-                <h2>Navegador de cursos más recientes</h2>
+                <h1 style={{fontWeight:"bold"}}>Navegador de cursos más recientes</h1>
               </div>
             </div>
           </div>
           <Slider {...coachSlider} className="coach-slider ">
+            
             <div className="coach-item-two wow fadeInUp delay-0-2s p-4 ml-8">
               <div className="image">
                 <img src="assets/images/coachs/28.jpg" alt="Course" />
@@ -63,18 +64,22 @@ export default function CourseItem(){
                   <span className="category">Ballon Design</span>
                 </a>
                 <h4>
-                  <a >
+                <Link href={"https://eltallerdemila.com/courses/balloon-decoration-masterclass/"}>
+                  {/* <a > */}
                     Ballon Decoration Masterclass
-                  </a>
+                  {/* </a> */}
+                  </Link>
                 </h4>
                 <ul className="coach-footer">
                   <li>
+                  <Link href={"https://eltallerdemila.com/courses/balloon-decoration-masterclass/"}>
                     <img
                       src="assets/images/coachs/couse-author11.jpg"
                       alt="Author"
                     />
+                    </Link>
                     <span>
-                      By <b>Bennie L.</b>
+                      By <b>Camila's.</b>
                     </span>
                   </li>
                   <li>
@@ -84,6 +89,7 @@ export default function CourseItem(){
                 </ul>
               </div>
             </div>
+            
             <div className="coach-item-two wow fadeInUp delay-0-4s p-4 ml-8">
               <div className="image">
                 <img src="assets/images/coachs/54.jpg" alt="Course" />
@@ -98,7 +104,7 @@ export default function CourseItem(){
                 </a>
                 <h4>
                   <a>
-                   Ballon Decoration at Event or Party 
+                   Coming soon..
                   </a>
                 </h4>
                 <ul className="coach-footer">
@@ -108,7 +114,7 @@ export default function CourseItem(){
                       alt="Author"
                     />
                     <span>
-                      By <b>Michael R.</b>
+                      By <b>Milas.</b>
                     </span>
                   </li>
                   <li>
@@ -118,7 +124,7 @@ export default function CourseItem(){
                 </ul>
               </div>
             </div>
-            <div className="coach-item-two wow fadeInUp delay-0-6s p-4 ml-8">
+            {/* <div className="coach-item-two wow fadeInUp delay-0-6s p-4 ml-8">
               <div className="image">
                 <img src="assets/images/coachs/28.jpg" alt="Course" />
               </div>
@@ -253,7 +259,7 @@ export default function CourseItem(){
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </Slider>
         </div>
       </section>

@@ -168,7 +168,7 @@ export default function Partners() {
                     <span className="sub-title-three">
                       Why Ch<span>oose Us</span>
                     </span>
-                    <h2>Nuestro viaje de decoración con globos</h2>
+                    <h1 style={{fontSize:'32px'}}><b>Nuestro viaje de decoración con globos</b></h1>
                   </div>
                   <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptat
@@ -177,7 +177,7 @@ export default function Partners() {
                     vitae dicta sunt explica boemo enim ipsam voluptatem quia
                     voluptas
                   </p>
-                  <ul className="list-style-four pt-5 pb-35">
+                  <ul className="list-style-four pt-5 pb-35" style={{marginTop:'-18px'}}>
                     <li>Mejor Instructor &amp; Mejores programas</li>
                     <li>Grupo 100% certificado ISO</li>
                     <li>Premios Mejores Resultados</li>
@@ -246,7 +246,7 @@ export default function Partners() {
               <div className="about-content-two wow fadeInRight delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title-two">Aprende nosotras</span>
-                  <h2>Experiencia en el centro de aprendizaje en línea</h2>
+                  <h1><b>Experiencia en el centro de aprendizaje en línea</b></h1>
                 </div>
                 <p>
                   Sit amet consectetur adipiscing sed eiusmod tempor indunt ut
@@ -313,8 +313,8 @@ export default function Partners() {
               <div className="col-lg-7">
                 <div className="about-content rel z-2 pb-115 rpb-85 wow fadeInRight delay-0-2s">
                   <div className="section-title mb-40">
-                    <span className="sub-title mb-25">Sobre nosotras</span>
-                    <h2>Proporcionamos Life Coach de asesores expertos</h2>
+                    <span className="sub-title mb-25 pt-10 py-10" style={{fontSize:'15px',fontWeight:'12px'}}>Sobre nosotras</span>
+                    <h1> <b>Proporcionamos Life Coach de asesores expertos</b></h1>
                   </div>
                   <div className="about-features">
                     <div className="row">
@@ -394,6 +394,7 @@ export default function Partners() {
             </div>
           </div>
         </section>
+        <br/>
         {/* About Section End */}
       </div>
       {/* <Fragment> */}

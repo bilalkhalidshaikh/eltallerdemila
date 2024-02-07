@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { Button, CardImg } from "reactstrap";
 import _ from "lodash";
 import Link from "next/link";
@@ -21,21 +21,48 @@ function Banner({ course, authors, paymentReports, items }) {
   //     });
   // }
 
-  const author = authors.find(
-    (author) => author?.id === course?.course_author_id
-  );
-  // const author = authors && authors.length > 0
-  //   ? authors.find((author) => author?.id === currentItem?.item_author_id)
-  //   : null;
+  console.log("banner",authors)
+  const [authorData, setAuthorData] = useState(null);
+  useEffect(() => {
+    if (authors && course) {
+      const author = authors.find((author) => author?.id === course?.course_author_id);
+      setAuthorData(author);
+      console.log("author id",author)
+    }
+  }, [authors, course]);
+
+  const pic_url = authorData?.user_pic || "/img/noPic.png";
 
 
-  const pic_url = author?.user_pic ? author?.user_pic : "/img/noPic.png";
+//   <Link href={`/user?id=${author?.id}`}>
+//   <div className="teacher d-flex align-items-center px-2">
+//     <img
+//       alt={author?.name}
+//       className="avatar avatar-md-sm rounded-circle shadow"
+//       src={pic_url}
+//     />
+//     <div className="ml-2">
+//       {/* <h6
+//         className="mb-0 text-shadow"
+//         style={{ color: "#fff" }}
+//       >{`${author?.user_name}`}</h6> */}
+//       <h6 className="mb-0 text-shadow" style={{ color: "#fff" }}>{author?.user_name || "N/A"}</h6>
+//       {/* <p
+//         className="small my-0 text-muted"
+//         style={{ color: "#fff" }}
+//       >
+//         {author?.short_description || ""}
+//       </p> */}
+//       <p className="small my-0 text-muted" style={{ color: "#fff" }}>{author?.short_description || "N/A"}</p>
+//     </div>
+//   </div>
+// </Link>
 
   return (
     <section
       className="px-0 py-5 m-0"
       style={{
-        backgroundColor: "#1a274e",
+        backgroundColor: "#4E795E",
         color: "whi_te",
       }}
     >
@@ -76,27 +103,36 @@ function Banner({ course, authors, paymentReports, items }) {
                 {_.upperFirst(course?.course_description)}
               </p>
             </div>
-            <Link href={`/user?id=${author?.id}`}>
-              <div className="teacher d-flex align-items-center px-2">
-                <img
-                  alt={author?.name}
-                  className="avatar avatar-md-sm rounded-circle shadow"
-                  src={pic_url}
-                />
-                <div className="ml-2">
-                  <h6
-                    className="mb-0 text-shadow"
-                    style={{ color: "#fff" }}
-                  >{`${author?.user_name}`}</h6>
-                  <p
-                    className="small my-0 text-muted"
-                    style={{ color: "#fff" }}
-                  >
-                    {author?.short_description || ""}
-                  </p>
-                </div>
-              </div>
-            </Link>
+           
+
+            {/* <Link href={`/user?id=${authorData?.id}`}>
+        <div className="teacher d-flex align-items-center px-2">
+          <img
+            alt={authorData?.name}
+            className="avatar avatar-md-sm rounded-circle shadow"
+            src={pic_url}
+          />
+          <div className="ml-2">
+            <h6 className="mb-0 text-shadow" style={{ color: "#fff" }}>{authorData?.user_name || "N/A"}</h6>
+            <p className="small my-0 text-muted" style={{ color: "#fff" }}>{authorData?.short_description || "N/A"}</p>
+          </div>
+        </div>
+      </Link> */}
+      {authorData && (
+  <Link href={`/user?id=${authorData?.id}`}>
+    <div className="teacher d-flex align-items-center px-2">
+      <img
+        alt={authorData?.name}
+        className="avatar avatar-md-sm rounded-circle shadow"
+        src={pic_url}
+      />
+      <div className="ml-2">
+        <h6 className="mb-0 text-shadow" style={{ color: "#fff" }}>{authorData?.user_name || "N/A"}</h6>
+        <p className="small my-0 text-muted" style={{ color: "#fff" }}>{authorData?.short_description || "N/A"}</p>
+      </div>
+    </div>
+  </Link>
+)}
             {items[0] &&
               (course?.course_price > 0 ? (
                 !currentReport ? (
@@ -124,7 +160,8 @@ function Banner({ course, authors, paymentReports, items }) {
                         fontSize: 25,
                       }}
                     >
-                      {singlecourse?.buttonStartText}
+                      {/* {singlecourse.buttonStartText} */}
+                      Empezar
                       <Icons icon="arrowRight" className="ml-2 arrow1" />
                     </p>
                   </Link>
