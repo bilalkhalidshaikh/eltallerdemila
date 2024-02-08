@@ -105,6 +105,14 @@ export default function Hero() {
     router.push(`/${"search"}?word=${word}`);
   };
 
+  const handleClickScroll = () => {
+    const element = document.getElementById('course');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+  
+
   return (
     <>
       {/* <section className="section pt-5 pb-0 mt-4">
@@ -247,8 +255,8 @@ export default function Hero() {
                     </a>
                   {/* </Link> */}
                   {/* <Link href="/course-grid"> */}
-                    <a className="theme-btn style-two text-black bg-white mt-10" href="https://eltallerdemila.com/">
-                     <span >our courses</span>  <i className="fas fa-arrow-right" />
+                    <a className="theme-btn style-two text-dark bg-white mt-10" href="#course">
+                     <span className="text-dark">our courses</span>  <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}
                 </div>

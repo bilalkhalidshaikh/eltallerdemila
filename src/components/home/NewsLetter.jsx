@@ -53,7 +53,7 @@ const testimonialthree = {
     return (
         <>
            {/* Newsletter Section Start */}
-      <section className="newsletter-section pb-130 rpb-100 wow fadeInUp delay-0-2s">
+      <section className="newsletter-section pb-130 rpb-100 wow fadeInUp delay-0-2s" id="news">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -140,7 +140,7 @@ const testimonialthree = {
       </section>
       {/* Newsletter Section End */}
       {/* Blog Section Start */}
-      <section className="blog-section">
+      <section className="blog-section" id="blog">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-7 col-md-8">

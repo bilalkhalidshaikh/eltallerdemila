@@ -37,7 +37,7 @@ export default function CourseItem(){
     return(
         <>
          {/* Coach Section Start */}
-      <section className="coach-section-two bg-white rel z-1 pt-185 rpt-150 pb-130 rpb-100">
+      <section className="coach-section-two bg-white rel z-1 pt-185 rpt-150 pb-130 rpb-100" id="course">
         <div className="container for-circle rpt-5">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-7 col-md-8">

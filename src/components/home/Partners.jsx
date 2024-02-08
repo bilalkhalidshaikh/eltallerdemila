@@ -183,7 +183,7 @@ export default function Partners() {
                     <li>Premios Mejores Resultados</li>
                   </ul>
                   {/* <Link href="/about"> */}
-                  <a className="theme-btn my-15 text-white">
+                  <a className="theme-btn my-15 text-white" href="#learn">
                     Aprende más <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}
@@ -219,7 +219,7 @@ export default function Partners() {
         </section>
         {/*  */}
          {/* Next About Sec */}
-     <section className="about-section-two pb-120 rpb-95">
+     <section className="about-section-two pb-120 rpb-95" id="learn">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -256,12 +256,12 @@ export default function Partners() {
                 </p>
                 <div className="about-btns">
                   {/* <Link href="/about"> */}
-                    <a className="theme-btn my-15 text-white">
+                    <a className="theme-btn my-15 text-white" href="#about">
                     Aprende más <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}
                   {/* <Link href="/faqs"> */}
-                    <a className="read-more">
+                    <a className="read-more text-dark text-decoration-none" href="#about">
                     Cómo funciona <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}
@@ -306,7 +306,7 @@ export default function Partners() {
      {/* Next About Sec */}
         {/*  */}
         {/* About Section Start */}
-        <section className="about-section pt-130 rpt-100">
+        <section className="about-section pt-130 rpt-100" id="about">
           <div className="container">
             <div className="row">
              
@@ -374,12 +374,12 @@ export default function Partners() {
                   </div>
                   <div className="about-btns">
                     {/* <Link href="/about"> */}
-                    <a className="theme-btn style-two my-15 text-white">
-                    Conozca más nosotros<i className="fas fa-arrow-right" />
+                    <a className="theme-btn style-two my-15 text-white" href="#blog">
+                    Conozca más nosotros<i className="fas fa-arrow-right"  />
                     </a>
                     {/* </Link> */}
                     {/* <Link href="/faqs"> */}
-                    <a className="read-more">
+                    <a className="read-more text-dark text-decoration-none" href="#news" >
                     Cómo funciona <i className="fas fa-arrow-right" />
                     </a>
                     {/* </Link> */}
@@ -397,7 +397,7 @@ export default function Partners() {
         <br/>
         {/* About Section End */}
       </div>
-      {/* <Fragment> */}
+      {/* <Fragment> */}  
 
       {/* </Fragment> */}
     </>
