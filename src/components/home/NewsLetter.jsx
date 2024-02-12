@@ -156,7 +156,8 @@ const testimonialthree = {
           </div>
           <div className="row">
             <div className="col-lg-6">
-              <div className="blog-item big-item wow fadeInUp delay-0-2s">
+              {/* <div className="blog-item big-item wow fadeInUp delay-0-2s"> */}
+              <div className="blog-item  wow fadeInUp delay-0-2s">
                 <div className="blog-image">
                   <img src="assets/images/blog/65.jpg" alt="Blog" />
                 </div>

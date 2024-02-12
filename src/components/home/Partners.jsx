@@ -159,7 +159,7 @@ export default function Partners() {
           </div>
         </Slider>
 </section> */}
-        <section className="why-choose-section pt-120 rpt-90 pb-130 rpb-100">
+        <section className="why-choose-section pt-120 rpt-90 pb-130 rpb-100" id="why">
           <div className="container">
             <div className="row justify-content-between align-items-center">
               <div className="col-lg-6">
@@ -271,9 +271,9 @@ export default function Partners() {
                     <span
                       className="count-text plus"
                       data-speed={3000}
-                      data-stop={256}
+                      data-stop={24}
                     >
-                      <Counter end={256} />
+                      <Counter end={24} />
                     </span>
                     <span>Enrolled Learner</span>
                   </div>

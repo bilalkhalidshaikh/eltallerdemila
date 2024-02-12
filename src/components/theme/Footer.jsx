@@ -103,22 +103,30 @@ export default function Footer({ litle }) {
     <Fragment>
       <li>
         {/* <Link href="/faqs"> */}
+        <a href="#why">
         Faqs
+        </a>
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-        Links
+        <a href="#blog">
+        News
+        </a>
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/about"> */}
-        About
+        <a href="#about">
+                    About 
+                  </a> 
         {/* </Link> */}
       </li>
       <li>
         {/* <Link href="/contact"> */}
-        Payments
+        <a href="#course">
+        Courses
+        </a>
         {/* </Link> */}
       </li>
     </Fragment>
@@ -233,7 +241,9 @@ export default function Footer({ litle }) {
             <div className="row justify-content-between text-white pt-65">
               <div className="col-lg-3 col-sm-4">
                 <div className="footer-widget about-widget">
-                  <h5 className="footer-title">About Us</h5>
+                  <h5 className="footer-title">
+               About Us
+                    </h5>
                   <p>
                     Sit amet consectetur adipiscin seeiusmod tempor incididunt
                     ut dolore magna aliqu asusp disse ultrices gravida commodo
@@ -303,9 +313,11 @@ export default function Footer({ litle }) {
                             required=""
                           />
                         </div>
+                        <a href="https://eltallerdemila.com/login">
                         <button className="theme-btn style-two" type="submit">
                           sign up <i className="fas fa-arrow-right" />
                         </button>
+                        </a>
                       </form>
                     </div>
                   </div>
@@ -355,7 +367,8 @@ export default function Footer({ litle }) {
             <div className="col-sm-12">
               <div className="text-sm-center text-white">
                 <small className={litle ? "mb-0 text-center" : "mb-0"}>
-                  ©{new Date().getFullYear()} eltallerdemila.com
+                  {/* ©{new Date().getFullYear()} */}
+                   Crafted by Achro designs
                 </small>
               </div>
             </div>

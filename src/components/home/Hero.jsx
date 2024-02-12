@@ -237,7 +237,7 @@ export default function Hero() {
             <div className="col-lg-6 align-self-center">
               <div className="hero-content-three pt-10 pb-100 rpt-40">
                 <span className="hero-sub-title mb-10 wow fadeInUp delay-0-2s">
-                  <span>24+</span> estudiantes
+                  <span>24</span> estudiantes
                 </span>
                 <h1 className="mb-25 wow fadeInUp delay-0-4s fw-12" style={{fontWeight:'32px !important'}}>
                   {/* We’re Best <span>Online</span> Education Partners University
@@ -246,7 +246,7 @@ export default function Hero() {
                 </h1>
                 <ul className="list-style-one wow fadeInUp delay-0-6s">
                   <li style={{fontWeight:'12px'}}>Expertas Asesoras</li>
-                  <li>5+ Cursos</li>
+                  <li>1 Cursos</li>
                 </ul>
                 <div className="hero-btns mt-10 wow fadeInUp delay-0-8s">
                   {/* <Link href="/contact"> */}
