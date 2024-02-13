@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import SEO from "components/common/Seo";
 import Hero from "components/home/Hero";
 import Partners from "components/home/Partners";
@@ -7,6 +7,7 @@ import PopularCourses from "components/home/PopularCourses";
 import Invitation from "components/common/Invitation";
 import Link from "next/link";
 import Slider from "react-slick";
+import ReactPlayer from "react-player";
 
 
 export default function CourseItem(){
@@ -34,6 +35,10 @@ export default function CourseItem(){
           },
         ],
       };
+const videoUrl =
+"https://eltallerdemila.com/wp-content/uploads/2023/05/WhatsApp-Video-2024-02-13-at-22.57.46_f3bbf5fc-1.mp4";
+const videoRef = useRef(null);
+
     return(
         <>
          {/* Coach Section Start */}
@@ -52,9 +57,28 @@ export default function CourseItem(){
           <Slider {...coachSlider} className="coach-slider ">
             
             <div className="coach-item-two wow fadeInUp delay-0-2s p-4 ml-8">
-              <div className="image">
+              {/* <div className="image">
                 <img src="assets/images/coachs/28.jpg" alt="Course" />
-              </div>
+              </div> */}
+               <div className=" video-container image heightSet" style={{height:"250px"}}>
+          <video
+            className="course-video"
+            src={"https://eltallerdemila.com/wp-content/uploads/2023/05/WhatsApp-Video-2024-02-13-at-22.57.46_f3bbf5fc-1.mp4"}
+            onMouseOver={event => event.currentTarget.play()}
+            onMouseOut={event => event.currentTarget.pause()}
+            onFocus={event => event.currentTarget.play()}
+            onBlur={event => event.currentTarget.pause()}
+            loop
+            // muted
+            preload="none" // This helps to not load the video until needed
+            nofullscreen
+            poster="assets/images/coachs/28.jpg"
+            // width={"400px"}
+            // height={"100px"}
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
               <div className="content">
                 <div className="ratting-star">
                   <i className="fas fa-star" />
@@ -267,3 +291,6 @@ export default function CourseItem(){
         </>
     )
 }
+
+
+
