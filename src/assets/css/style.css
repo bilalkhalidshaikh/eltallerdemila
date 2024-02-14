@@ -1,8 +1,8 @@
 @import url(react-multi-carousel/lib/styles.css);
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
-/* body{
+*{
   scroll-behavior: smooth;
-} */
+}
 .bg-primary {
   background-color: #00CC83 !important;
 }

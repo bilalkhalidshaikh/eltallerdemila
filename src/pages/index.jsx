@@ -13,6 +13,7 @@ import { getAllAuthors, getAllCourses } from "utils/courses";
 
 export default function Index({ courses, authors }) {
   return (
+    <>
     <Layout>
       <SEO title="El Taller de Mila" />
       <Hero />
@@ -24,6 +25,7 @@ export default function Index({ courses, authors }) {
       <NewsLetter/>
       {/* <Invitation /> */}
     </Layout>
+    </>
   );
 }
 

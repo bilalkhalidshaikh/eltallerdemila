@@ -28,12 +28,14 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
+    <>
     <ReduxProvider store={store}>
-      <FirebaseContext.Provider value={myFirebase}>
+      {/* <FirebaseContext.Provider value={myFirebase}> */}
         <Component {...pageProps} />
         {loading && <div className="preloader" />}
-      </FirebaseContext.Provider>
+      {/* </FirebaseContext.Provider> */}
     </ReduxProvider>
+    </>
   );
 }
  
