@@ -250,7 +250,7 @@ export default function Hero() {
                 </ul>
                 <div className="hero-btns mt-10 wow fadeInUp delay-0-8s">
                   {/* <Link href="/contact"> */}
-                    <a className="theme-btn mt-10 text-white" href="https://eltallerdemila.com/login/">
+                    <a className="theme-btn mt-10 text-white" href="https://eltallerdemila.com/all-courses/">
                       Get started <i className="fas fa-arrow-right" />
                     </a>
                   {/* </Link> */}

@@ -10,11 +10,14 @@ import Link from "next/link";
 
 
 import { getAllAuthors, getAllCourses } from "utils/courses";
+import Navbar from "components/theme/Navbar";
+import Footer from "components/theme/Footer";
 
 export default function Index({ courses, authors }) {
   return (
     <>
     <Layout>
+    {/* <Navbar/> */}
       <SEO title="El Taller de Mila" />
       <Hero />
       <Partners />
@@ -23,6 +26,7 @@ export default function Index({ courses, authors }) {
       </section> */}
       <CourseItem/>
       <NewsLetter/>
+      {/* <Footer/> */}
       {/* <Invitation /> */}
     </Layout>
     </>

@@ -56,9 +56,9 @@ const socialIcons = [
 
 const navbarLinks = [
   { title: "El Taller de Mila", url: "https://eltallerdemila.com/" },
-  { title: "Register", url: "https://eltallerdemila.com/registration/" },
+  { title: "Courses", url: "https://eltallerdemila.com/all-courses/" },
   // { title: "Blog", url: "/blog" },
-  { title: "Login", url: "https://eltallerdemila.com/login" },
+  { title: "About", url: "https://eltallerdemila.com/#about" },
 
   // {
   //   title: "Cursos",
