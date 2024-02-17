@@ -173,7 +173,7 @@ class Navbar extends Component {
           <div className="d-flex float-right" style={{ height: 60 }}>
             {/* <Switch />
             <Search /> */}
-            {/* <AuthMenu userData={this.props.userData} isDark={isDark} /> */}
+            <AuthMenu userData={this.props.userData} isDark={isDark} />
           </div>
 
           <Collapse isOpen={this.state.open} id="navigation">

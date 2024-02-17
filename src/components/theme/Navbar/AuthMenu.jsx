@@ -51,7 +51,7 @@ function AuthMenu(props) {
 
   return (
     <>
-      <div className="mx-3 d-none d-md-flex">
+      {/* <div className="mx-3 d-none d-md-flex">
         {!user ? (
           <>
             {router.pathname !== "/register" ? (
@@ -123,11 +123,20 @@ function AuthMenu(props) {
             </li>
           </ul>
         )}
-      </div>
-
+      </div> */}
+       <div className="buy-button p-0 m-0 mr-2">
+                <a
+                  className="btn btn-primary my-0 p-2"
+                  href="https://eltallerdemila.com/all-courses/"
+                  target="_blank"
+                  // onClick={openRegisterPage}
+                >
+                  Comience!
+                </a>
+              </div>
       <div className="menu-extras my-auto mx-1 d-md-none ">
         <div className="menu-item pt-2">
-          <a href="#!">
+          <a href="https://eltallerdemila.com/my-account/">
             <Icons icon="user-circle" className="fa-1x text-muted" />
           </a>
         </div>
