@@ -35,7 +35,7 @@ class PerfectScrollWraper extends React.Component {
       <div
         id="scroll-container"
         className="p-0 m-0"
-        style={{ position: "relative", height: "100vh", overflow: "hidden" }}
+        // style={{ position: "relative", height: "100vh", overflow: "scroll" }}
         ref={this.myRef}
       >
         {this.props.children}

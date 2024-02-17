@@ -109,7 +109,7 @@ class Navbar extends Component {
         className={
           this.state.sticky ? "bg-light sticky nav-sticky" : "sticky py-1"
         }
-        style={{ zIndex: 1001 }}
+        style={{ zIndex: 1001,background:'white' }}
       >
         <div className="container">
           <div className="d-flex float-left"
@@ -173,7 +173,7 @@ class Navbar extends Component {
           <div className="d-flex float-right" style={{ height: 60 }}>
             {/* <Switch />
             <Search /> */}
-            <AuthMenu userData={this.props.userData} isDark={isDark} />
+            {/* <AuthMenu userData={this.props.userData} isDark={isDark} /> */}
           </div>
 
           <Collapse isOpen={this.state.open} id="navigation">
