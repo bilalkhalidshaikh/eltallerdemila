@@ -106,12 +106,11 @@ export default function Hero() {
   };
 
   const handleClickScroll = () => {
-    const element = document.getElementById('course');
+    const element = document.getElementById("course");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
-  
 
   return (
     <>
@@ -210,9 +209,11 @@ export default function Hero() {
           <div className="row large-gap">
             <div className="col-lg-6 align-self-end">
               <div className="hero-three-image-part">
-                <img src="assets/images/about/woman.png"
-                //  style={{maxHeight:'46rem',height:'46rem',width:"46em"}} 
-                 alt="Hero" />
+                <img
+                  src="assets/images/about/woman.png"
+                  //  style={{maxHeight:'46rem',height:'46rem',width:"46em"}}
+                  alt="Hero"
+                />
                 <div className="hero-chart wow fadeInUp delay-0-2s">
                   <img src="assets/images/hero/bal.jpg" alt="Chart" />
                   <h5>Resultados de éxito</h5>
@@ -239,25 +240,37 @@ export default function Hero() {
                 <span className="hero-sub-title mb-10 wow fadeInUp delay-0-2s">
                   <span>24</span> estudiantes
                 </span>
-                <h1 className="mb-25 wow fadeInUp delay-0-4s fw-12" style={{fontWeight:'32px !important'}}>
+                <h1
+                  className="mb-25 wow fadeInUp delay-0-4s fw-12"
+                  style={{ fontWeight: "32px !important" }}
+                >
                   {/* We’re Best <span>Online</span> Education Partners University
                   2022 */}
-                 <b>Aprenda el arte <span>de los globos.</span></b>
+                  <b>
+                    Aprenda el arte <span>de los globos.</span>
+                  </b>
                 </h1>
                 <ul className="list-style-one wow fadeInUp delay-0-6s">
-                  <li style={{fontWeight:'12px'}}>Expertas Asesoras</li>
+                  <li style={{ fontWeight: "12px" }}>Expertas Asesoras</li>
                   <li>1 Cursos</li>
                 </ul>
                 <div className="hero-btns mt-10 wow fadeInUp delay-0-8s">
                   {/* <Link href="/contact"> */}
-                    <a className="theme-btn mt-10 text-white" href="https://eltallerdemila.com/all-courses/">
-                      Get started <i className="fas fa-arrow-right" />
-                    </a>
+                  <a
+                    className="theme-btn mt-10 text-white"
+                    href="https://eltallerdemila.com/registration/"
+                  >
+                    Get started <i className="fas fa-arrow-right" />
+                  </a>
                   {/* </Link> */}
                   {/* <Link href="/course-grid"> */}
-                    <a className="theme-btn style-two text-dark bg-white mt-10" href="#course">
-                     <span className="text-dark">our courses</span>  <i className="fas fa-arrow-right" />
-                    </a>
+                  <a
+                    className="theme-btn style-two text-dark bg-white mt-10"
+                    href="https://eltallerdemila.com/all-courses/"
+                  >
+                    <span className="text-dark">our courses</span>{" "}
+                    <i className="fas fa-arrow-right" />
+                  </a>
                   {/* </Link> */}
                 </div>
               </div>
@@ -273,7 +286,7 @@ export default function Hero() {
         <div className="hero-circles-two wow fadeInUpRight delay-0-2s" />
       </section>
       {/* Hero Section End */}
- 
+
       {/* Features Section Start */}
       {/* <section className="features-section rel z-1 pt-80 pb-40 bg-[#00CC83] text-white" style={{backgroundColor:"#00CC83"}}>
         <div className="container">
@@ -334,10 +347,8 @@ export default function Hero() {
         />
       </section> */}
       {/* Features Section End */}
-      <br/>
-      <br/>
-         
-     
+      <br />
+      <br />
     </>
   );
 }
