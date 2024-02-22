@@ -258,7 +258,7 @@ export default function Hero() {
                   {/* <Link href="/contact"> */}
                   <a
                     className="theme-btn mt-10 text-white"
-                    href="https://eltallerdemila.com/registration/"
+                    href="https://eltallerdemila.com/registration-old-2/"
                   >
                     Get started <i className="fas fa-arrow-right" />
                   </a>
