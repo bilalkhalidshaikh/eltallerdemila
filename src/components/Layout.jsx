@@ -73,14 +73,15 @@ function Layout({ children, items, currentItem, course }) {
     //   </PerfectScrollWraper>
     //   )}
     // </>
+   
 
     <PerfectScrollWraper>
-       <Navbar
+       {/* <Navbar
                 isDark={isNavbarDark(pathname)}
                 sticky={pathname === "/login" || pathname === "/register"}
-              />
+              /> */}
             {children}
-            {pathname !== "/login" && pathname !== "/register" && <Footer />}
+            {/* {pathname !== "/login" && pathname !== "/register" && <Footer />} */}
     </PerfectScrollWraper>
   );
 }
