@@ -47,7 +47,7 @@ export default function Partners() {
       </CountUp>
     );
   };
-  
+
   return (
     <>
       <div>
@@ -159,33 +159,54 @@ export default function Partners() {
           </div>
         </Slider>
 </section> */}
-        <section className="why-choose-section pt-120 rpt-90 pb-130 rpb-100" id="why">
+        <section
+          className="why-choose-section pt-120 rpt-90 pb-130 rpb-100"
+          id="why"
+        >
           <div className="container">
             <div className="row justify-content-between align-items-center">
               <div className="col-lg-6">
                 <div className="why-choose-content rmb-80 wow fadeInUp delay-0-2s">
                   <div className="section-title mb-25">
                     <span className="sub-title-three">
-                      Why Ch<span>oose Us</span>
+                      {/* Why Ch<span>oose Us</span> */}
+                      Aprende con <span>El Taller de Mila</span>
                     </span>
-                    <h1 style={{fontSize:'32px'}}><b>Nuestro viaje de decoración con globos</b></h1>
+                    {/* <h1 style={{fontSize:'32px'}}><b>Nuestro viaje de decoración con globos</b></h1> */}
+                    <h1 style={{ fontSize: "32px" }}>
+                      <b>Quien es Mila?</b>
+                    </h1>
                   </div>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptat
-                    santium doloremque laudantium, totam rem aperiam, eaque ipsa
-                    quae abillo inventore veritatis et quasi architecto beatae
-                    vitae dicta sunt explica boemo enim ipsam voluptatem quia
-                    voluptas
+                    "Hola! Mi nombre es Camila Victoria Aponte, soy colombiana y
+                    en mi país mi profesión es abogada, especializada en
+                    derechos humanos. Mi oficio es artesana y hoy puedo decir
+                    que amo lo que hago y eso me hace feliz. El nombre "Mila"
+                    surgió porque mi hermano menor, cuando era pequeño, no podía
+                    decir Camila y me decía "mila". El taller de Mila nació
+                    durante la pandemia. En este oficio, me considero una
+                    artesana y siento que el espacio donde hago mis diseños es
+                    un taller, es mi lugar feliz. Cuando decidí hacer mis
+                    diseños, pensé en lo que a mí me gustaría darle a mis seres
+                    queridos y lo que yo quisiera recibir: algo diferente, hecho
+                    exclusivamente para mí y elegante. Y ese es el objetivo de
+                    El Taller de Mila, generar emociones y construir recuerdos.
+                    ¡Porque el regalo perfecto sí existe y nosotros lo hacemos
+                    exclusivamente para ti!"
                   </p>
-                  <ul className="list-style-four pt-5 pb-35" style={{marginTop:'-18px'}}>
-                    <li>Mejor Instructor &amp; Mejores programas</li>
-                    <li>Grupo 100% certificado ISO</li>
-                    <li>Premios Mejores Resultados</li>
+                  <ul
+                    className="list-style-four pt-5 pb-35"
+                    style={{ marginTop: "-18px" }}
+                  >
+                    {/* <li>Mejor Instructor &amp; Mejores programas</li> */}
+                    <li>Mejor instructora Y Mejores clases y programas.</li>
+                    {/* <li>Grupo 100% certificado ISO</li>
+                    <li>Premios Mejores Resultados</li> */}
                   </ul>
                   {/* <Link href="/about"> */}
                   <a className="theme-btn my-15 text-white" href="#learn">
                     Aprende más <i className="fas fa-arrow-right" />
-                    </a>
+                  </a>
                   {/* </Link> */}
                 </div>
               </div>
@@ -218,103 +239,119 @@ export default function Partners() {
           </div>
         </section>
         {/*  */}
-         {/* Next About Sec */}
-     <section className="about-section-two pb-120 rpb-95" id="learn">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="about-two-left rmb-75 wow fadeInLeft delay-0-2s">
-                <div className="about-two-images">
-                  <img src="assets/images/about/28.jpg" alt="About" />
-                  <img src="assets/images/about/78.jpg" alt="About" />
-                   {/* <img src="https://imgur.com/rnrU4nC" alt="About" />
+        {/* Next About Sec */}
+        <section className="about-section-two pb-120 rpb-95" id="learn">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="about-two-left rmb-75 wow fadeInLeft delay-0-2s">
+                  <div className="about-two-images">
+                    <img src="assets/images/about/28.jpg" alt="About" />
+                    <img src="assets/images/about/78.jpg" alt="About" />
+                    {/* <img src="https://imgur.com/rnrU4nC" alt="About" />
                   <img src="https://imgur.com/pWyVQyI" alt="About" /> */}
-                </div>
-                <div className="about-image-over">
-                <div className="about-image-over-item wow fadeInRight delay-0-2s">
-                    <img src="assets/images/hero/b.png" alt="Icon" />
-                    <h5>Asesora de experiencia</h5>
                   </div>
-                  <div className="about-image-over-item">
-                    <img src="assets/images/about/icon2.png" alt="Icon" />
-                    <h5>Tutoriales en vídeo de calidad</h5>
+                  <div className="about-image-over">
+                    <div className="about-image-over-item wow fadeInRight delay-0-2s">
+                      <img src="assets/images/hero/b.png" alt="Icon" />
+                      <h5>Asesora de experiencia</h5>
+                    </div>
+                    <div className="about-image-over-item">
+                      <img src="assets/images/about/icon2.png" alt="Icon" />
+                      <h5>Tutoriales en vídeo de calidad</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="about-content-two wow fadeInRight delay-0-2s">
-                <div className="section-title mb-30">
-                  <span className="sub-title-two">Aprende nosotras</span>
-                  <h1><b>Experiencia en el centro de aprendizaje en línea</b></h1>
-                </div>
-                <p>
-                  Sit amet consectetur adipiscing sed eiusmod tempor indunt ut
-                  labore et dolore magna aliquaes ipsum suspendisse ultrice
-                  gravida. Risus commodo viverra maecenas accumsan lacus vel
-                  facilisis dolorem fugiat voluptas nulla pariatur.{" "}
-                </p>
-                <div className="about-btns">
-                  {/* <Link href="/about"> */}
+              <div className="col-lg-6">
+                <div className="about-content-two wow fadeInRight delay-0-2s">
+                  <div className="section-title mb-30">
+                    {/* <span className="sub-title-two">Aprende nosotras</span> */}
+                    <span className="sub-title-two">
+                      Aprende con El Taller de Mila
+                    </span>
+                    <h1>
+                      <b>Experiencia en el centro de aprendizaje en línea</b>
+                    </h1>
+                  </div>
+                  <p>
+                    Camila es una verdadera maestra en su oficio, con años de
+                    experiencia y un talento innato para enseñar de manera clara
+                    y efectiva. Además, ofrece una amplia variedad de recursos,
+                    desde videos tutoriales hasta guías detalladas, para que
+                    puedas aprender a tu propio ritmo y según tus necesidades.
+                  </p>
+                  <div className="about-btns">
+                    {/* <Link href="/about"> */}
                     <a className="theme-btn my-15 text-white" href="#about">
-                    Aprende más <i className="fas fa-arrow-right" />
+                      Aprende más <i className="fas fa-arrow-right" />
                     </a>
-                  {/* </Link> */}
-                  {/* <Link href="/faqs"> */}
-                    <a className="read-more text-dark text-decoration-none" href="#about">
-                    Cómo funciona <i className="fas fa-arrow-right" />
+                    {/* </Link> */}
+                    {/* <Link href="/faqs"> */}
+                    <a
+                      className="read-more text-dark text-decoration-none"
+                      href="#about"
+                    >
+                      Cómo funciona <i className="fas fa-arrow-right" />
                     </a>
-                  {/* </Link> */}
-                </div>
-                <div className="counter-wrap">
-                  <div className="success-item">
-                    <span
-                      className="count-text plus"
-                      data-speed={3000}
-                      data-stop={24}
-                    >
-                      <Counter end={24} />
-                    </span>
-                    <span>Enrolled Learner</span>
+                    {/* </Link> */}
                   </div>
-                  <div className="success-item">
-                    <span
-                      className="count-text plus"
-                      data-speed={3000}
-                      data-stop="2.36"
-                    >
-                      <Counter end={2.36} />
-                    </span>
-                    <span>Finished Session</span>
-                  </div>
-                  <div className="success-item">
-                    <span
-                      className="count-text percent"
-                      data-speed={3000}
-                      data-stop={99}
-                    >
-                      <Counter end={99} />
-                    </span>
-                    <span>Saticfaction Rate</span>
+                  <div className="counter-wrap">
+                    <div className="success-item">
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop={24}
+                      >
+                        <Counter end={24} />
+                      </span>
+                      <span>Enrolled Learner</span>
+                    </div>
+                    <div className="success-item">
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop="2.36"
+                      >
+                        <Counter end={2.36} />
+                      </span>
+                      <span>Finished Session</span>
+                    </div>
+                    <div className="success-item">
+                      <span
+                        className="count-text percent"
+                        data-speed={3000}
+                        data-stop={99}
+                      >
+                        <Counter end={99} />
+                      </span>
+                      <span>Saticfaction Rate</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-     {/* Next About Sec */}
+        </section>
+        {/* Next About Sec */}
         {/*  */}
         {/* About Section Start */}
         <section className="about-section pt-130 rpt-100" id="about">
           <div className="container">
             <div className="row">
-             
               <div className="col-lg-7">
                 <div className="about-content rel z-2 pb-115 rpb-85 wow fadeInRight delay-0-2s">
                   <div className="section-title mb-40">
-                    <span className="sub-title mb-25 pt-10 py-10" style={{fontSize:'15px',fontWeight:'12px'}}>Sobre nosotras</span>
-                    <h1> <b>Proporcionamos Life Coach de asesores expertos</b></h1>
+                    <span
+                      className="sub-title mb-25 pt-10 py-10"
+                      style={{ fontSize: "15px", fontWeight: "12px" }}
+                    >
+                      Sobre nosotras
+                    </span>
+                    <h1>
+                      {" "}
+                      <b>Proporcionamos Life Coach de asesores expertos</b>
+                    </h1>
                   </div>
                   <div className="about-features">
                     <div className="row">
@@ -374,13 +411,20 @@ export default function Partners() {
                   </div>
                   <div className="about-btns">
                     {/* <Link href="/about"> */}
-                    <a className="theme-btn style-two my-15 text-white" href="#blog">
-                    Conozca más nosotros<i className="fas fa-arrow-right"  />
+                    <a
+                      className="theme-btn style-two my-15 text-white"
+                      href="#blog"
+                    >
+                      Conozca más nosotros
+                      <i className="fas fa-arrow-right" />
                     </a>
                     {/* </Link> */}
                     {/* <Link href="/faqs"> */}
-                    <a className="read-more text-dark text-decoration-none" href="#news" >
-                    Cómo funciona <i className="fas fa-arrow-right" />
+                    <a
+                      className="read-more text-dark text-decoration-none"
+                      href="#news"
+                    >
+                      Cómo funciona <i className="fas fa-arrow-right" />
                     </a>
                     {/* </Link> */}
                   </div>
@@ -394,10 +438,10 @@ export default function Partners() {
             </div>
           </div>
         </section>
-        <br/>
+        <br />
         {/* About Section End */}
       </div>
-      {/* <Fragment> */}  
+      {/* <Fragment> */}
 
       {/* </Fragment> */}
     </>

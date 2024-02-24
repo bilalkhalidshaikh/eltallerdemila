@@ -251,8 +251,8 @@ export default function Hero() {
                   </b>
                 </h1>
                 <ul className="list-style-one wow fadeInUp delay-0-6s">
-                  <li style={{ fontWeight: "12px" }}>Expertas Asesoras</li>
-                  <li>1 Cursos</li>
+                  <li style={{ fontWeight: "12px" }}>Asesora Experta</li>
+                  <li>1 Curso</li>
                 </ul>
                 <div className="hero-btns mt-10 wow fadeInUp delay-0-8s">
                   {/* <Link href="/contact"> */}

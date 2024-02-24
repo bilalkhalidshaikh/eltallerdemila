@@ -62,7 +62,7 @@ const videoRef = useRef(null);
               </div> */}
                <div className=" video-container image heightSet" style={{height:"250px"}}>
           <video
-            className="course-video"
+            className="course-video "
             src={"https://eltallerdemila.com/wp-content/uploads/2023/05/WhatsApp-Video-2024-02-13-at-22.57.46_f3bbf5fc-1.mp4"}
             onMouseOver={event => event.currentTarget.play()}
             onMouseOut={event => event.currentTarget.pause()}
@@ -72,9 +72,10 @@ const videoRef = useRef(null);
             // muted
             preload="none" // This helps to not load the video until needed
             nofullscreen
-            poster="assets/images/coachs/28.jpg"
+            poster="assets/images/coachs/53.jpg"
             // width={"400px"}
             // height={"100px"}
+            style={{borderRadius:'25px '}}
           >
             Your browser does not support the video tag.
           </video>
@@ -90,7 +91,7 @@ const videoRef = useRef(null);
                 <h4>
                 <Link href={"https://eltallerdemila.com/courses/balloon-decoration-masterclass/"}>
                   {/* <a > */}
-                    Ballon Decoration Masterclass
+                  Mini arco de globos orgánico
                   {/* </a> */}
                   </Link>
                 </h4>
