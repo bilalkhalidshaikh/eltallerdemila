@@ -72,7 +72,7 @@ const videoRef = useRef(null);
             // muted
             preload="none" // This helps to not load the video until needed
             nofullscreen
-            poster="assets/images/coachs/53.jpg"
+            poster="assets/images/coachs/79.jpg"
             // width={"400px"}
             // height={"100px"}
             style={{borderRadius:'25px '}}
