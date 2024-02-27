@@ -99,7 +99,7 @@ const videoRef = useRef(null);
                   <li>
                   <Link href={"https://eltallerdemila.com/courses/balloon-decoration-masterclass/"}>
                     <img
-                      src="assets/images/coachs/couse-author11.jpg"
+                      src="assets/images/testimonials/blank.png"
                       alt="Author"
                     />
                     </Link>
@@ -135,7 +135,7 @@ const videoRef = useRef(null);
                 <ul className="coach-footer">
                   <li>
                     <img
-                      src="assets/images/coachs/couse-author12.jpg"
+                      src="assets/images/testimonials/blank.png"
                       alt="Author"
                     />
                     <span>
