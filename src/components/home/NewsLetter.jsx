@@ -78,9 +78,9 @@ const testimonialthree = {
                   </h1>
                 </div>
                 <p>
-                  Sit amet consectetur adipiscinelit eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua suspendisse ultrices gravida.
-                  commodo viverra maecenas accumsan facilisis.
+                Entra tu cuenta de correo y subscríbete para estar
+informada(o) de todos nuestras futuras clases y proyectos. Actualizamos
+esta information regularmente
                 </p>
                 <form
                   onSubmit={(e) => e.preventDefault()}
@@ -176,13 +176,13 @@ const testimonialthree = {
                       <li>
                         <i className="far fa-user" />{" "}
                         {/* <Link href="/blog"> */}
-                          By Somalia
+                          By Camila
                           {/* </Link> */}
                       </li>
                       <li>
                         <i className="far fa-comments" />{" "}
                         {/* <Link href="/blog"> */}
-                          Comments (5)
+                          Comments (0)
                           {/* </Link> */}
                       </li>
                     </ul>
@@ -204,13 +204,13 @@ const testimonialthree = {
                       <li>
                         <i className="far fa-user" />{" "}
                         {/* <Link href="/blog"> */}
-                          By Somalia
+                          By Camila
                           {/* </Link> */}
                       </li>
                       <li>
                         <i className="far fa-comments" />{" "}
                         {/* <Link href="/blog"> */}
-                          Com (5)
+                          Com (0)
                           {/* </Link> */}
                       </li>
                     </ul>
@@ -220,7 +220,8 @@ const testimonialthree = {
                       {/* </Link> */}
                     </h5>
                     <p>
-                      Sit amet consectetur adiscins eiusmod tempor incididunt
+                    Desde pequeña, siempre fui una
+persona que se fijaba siempre en cada minimo detalle
                     </p>
                     {/* <Link href="/blog-details"> */}
                       <a className="read-more">
@@ -245,23 +246,25 @@ const testimonialthree = {
                       <li>
                         <i className="far fa-user" />{" "}
                         {/* <Link href="/blog"> */}
-                          By Somalia
+                          By Camila
                           {/* </Link> */}
                       </li>
                       <li>
                         <i className="far fa-comments" />{" "}
                         {/* <Link href="/blog"> */}
-                          Com (5)
+                          Com (0)
                           {/* </Link> */}
                       </li>
                     </ul>
                     <h5>
                       {/* <Link href="/blog-details"> */}
-                      Our helium options are here to stay! 
+                      Nuestros diseños con bombas de
+helio, estan aqui para quedarse!
                       {/* </Link> */}
                     </h5>
                     <p>
-                      Sit amet consectetur adiscins eiusmod tempor incididunt
+                    Arreglos y Decoraciones con bombas de Helio se han
+vuelto un exito total y son muy populares
                     </p>
                       <a className="read-more">
                       Leer más <i className="fas fa-arrow-right" />
@@ -274,7 +277,8 @@ const testimonialthree = {
           <div className="blog-more-btn pt-30 text-center">
             {/* <Link href="/blog"> */}
               <a className="theme-btn style-three">
-              ver más noticias <i className="fas fa-arrow-right" />
+              ver más noticias
+               {/* <i className="fas fa-arrow-right" /> */}
               </a>
             {/* </Link> */}
           </div>
@@ -290,7 +294,8 @@ const testimonialthree = {
               <div className="testimonial-three-content rel z-1 rmb-55 wow fadeInUp delay-0-2s">
                 <div className="section-title mb-20">
                   <span className="sub-title-three">
-                  Clientas Tes<span>timonials</span>
+                  {/* Clientas Tes<span>timonials</span> */}
+                  Testimonio de <span>clientes</span>
                   </span>
                   <h1>
                     <b>
@@ -300,12 +305,13 @@ const testimonialthree = {
                     </h1>
                 </div>
                 <p>
-                  Rem aperiam eaque ipsa quae abillo inventore veritatis
-                  architecto beatae vitae dicta sunt explica
+                Dejanos tus comentarios y
+cuentanos como te sentiste con nuestro curso una vez hayas terminado!
                 </p>
                 {/* <Link href="/about"> */}
                   <a className="read-more color-two mt-5">
-                  Ver más<i className="fas fa-arrow-right" />
+                  Ver más
+                  <i className="fas fa-arrow-right" />
                   </a>
                 {/* </Link> */}
               </div>
@@ -318,7 +324,7 @@ const testimonialthree = {
                 <div className="testimonial-three-item">
                   <div className="image">
                     <img
-                      src="assets/images/testimonials/testi-three-author?.png"
+                      src="assets/images/testimonials/blank.png"
                       alt="Author"
                     />
                   </div>
@@ -334,15 +340,75 @@ const testimonialthree = {
                       </div>
                     </div>
                     <p>
-                      Sed ut perspiciatis unde omniste natus sit voluptate
-                      accusantium doloremq udantium totam aperiam eaque quae
-                      abillo inventore veritatis architecto beatae
+                    El taller de
+Camila es una exelente plataforma que ha hecho sonreir a muchas
+personas! los cursos son muy faciles de aprender y ella los explica
+perfectamente. He aprendido mucho con este primer curso y estoy
+esperando por mas!
                     </p>
-                    <h5>Justin C. Swanson</h5>
-                    <span className="designation">Business Manager</span>
+                    <h5>Andrea Tatiana Lopez</h5>
+                    {/* <span className="designation">Business Manager</span> */}
                   </div>
                 </div>
                 <div className="testimonial-three-item">
+                  <div className="image">
+                    <img
+                      src="assets/images/testimonials/blank.png"
+                      alt="Author"
+                    />
+                  </div>
+                  <div className="content">
+                    <div className="quality-rating">
+                      <h4>Good Quality</h4>
+                      <div className="ratting">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                      </div>
+                    </div>
+                    <p>
+                    El taller de
+Camila es una exelente plataforma que ha hecho sonreir a muchas
+personas! los cursos son muy faciles de aprender y ella los explica
+perfectamente. He aprendido mucho con este primer curso y estoy
+esperando por mas!
+                    </p>
+                    <h5>Andrea Tatiana Lopez</h5>
+                    {/* <span className="designation">Business Manager</span> */}
+                  </div>
+                </div>
+                <div className="testimonial-three-item">
+                  <div className="image">
+                    <img
+                      src="assets/images/testimonials/blank.png"
+                      alt="Author"
+                    />
+                  </div>
+                  <div className="content">
+                    <div className="quality-rating">
+                      <h4>Good Quality</h4>
+                      <div className="ratting">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                      </div>
+                    </div>
+                    <p>
+                    El taller de
+Camila es una exelente plataforma que ha hecho sonreir a muchas
+personas! los cursos son muy faciles de aprender y ella los explica
+perfectamente. He aprendido mucho con este primer curso y estoy
+esperando por mas!
+                    </p>
+                    <h5>Andrea Tatiana Lopez</h5>
+                    {/* <span className="designation">Business Manager</span> */}
+                  </div>
+                </div>
+                {/* <div className="testimonial-three-item">
                   <div className="image">
                     <img
                       src="assets/images/testimonials/testi-three-author?.png"
@@ -395,7 +461,7 @@ const testimonialthree = {
                     <h5>Robert G. Brown</h5>
                     <span className="designation">Business Manager</span>
                   </div>
-                </div>
+                </div> */}
               </Slider>
             </div>
           </div>
@@ -416,7 +482,7 @@ const testimonialthree = {
                   alt="Instagram"
                 />
                 <div className="instagram-hover">
-                  <a href="assets/images/instagram/5.jpg">
+                  <a href="https://www.instagram.com/eltallerdemila01" target="_blank">
                     <i className="fab fa-instagram" />
                     <span>Instagram</span>
                   </a>
@@ -430,7 +496,7 @@ const testimonialthree = {
                   alt="Instagram"
                 />
                 <div className="instagram-hover">
-                  <a href="assets/images/instagram/13.jpg">
+                  <a href="https://www.instagram.com/eltallerdemila01" target="_blank">
                     <i className="fab fa-instagram" />
                     <span>Instagram</span>
                   </a>
@@ -444,7 +510,7 @@ const testimonialthree = {
                   alt="Instagram"
                 />
                 <div className="instagram-hover">
-                  <a href="assets/images/instagram/18.jpg">
+                  <a href="https://www.instagram.com/eltallerdemila01" target="_blank">
                     <i className="fab fa-instagram" />
                     <span>Instagram</span>
                   </a>
@@ -458,7 +524,7 @@ const testimonialthree = {
                   alt="Instagram"
                 />
                 <div className="instagram-hover">
-                  <a href="assets/images/instagram/11.jpg">
+                  <a href="https://www.instagram.com/eltallerdemila01" target="_blank">
                     <i className="fab fa-instagram" />
                     <span>Instagram</span>
                   </a>
@@ -472,7 +538,7 @@ const testimonialthree = {
                   alt="Instagram"
                 />
                 <div className="instagram-hover">
-                  <a href="assets/images/instagram/45.jpg">
+                  <a href="https://www.instagram.com/eltallerdemila01" target="_blank">
                     <i className="fab fa-instagram" />
                     <span>Instagram</span>
                   </a>
@@ -486,7 +552,7 @@ const testimonialthree = {
                   alt="Instagram"
                 />
                 <div className="instagram-hover">
-                  <a href="assets/images/instagram/37.jpg">
+                  <a href="https://www.instagram.com/eltallerdemila01" target="_blank">
                     <i className="fab fa-instagram" />
                     <span>Instagram</span>
                   </a>

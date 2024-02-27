@@ -346,11 +346,13 @@ export default function Partners() {
                       className="sub-title mb-25 pt-10 py-10"
                       style={{ fontSize: "15px", fontWeight: "12px" }}
                     >
-                      Sobre nosotras
+                      {/* Sobre nosotras */}
+                      Aprende mucho mas!
                     </span>
                     <h1>
                       {" "}
-                      <b>Proporcionamos Life Coach de asesores expertos</b>
+                      {/* <b>Proporcionamos Life Coach de asesores expertos</b> */}
+                      <b>Clases Personalisadas con El Taller de Mila</b>
                     </h1>
                   </div>
                   <div className="about-features">
@@ -363,7 +365,8 @@ export default function Partners() {
                           <div className="content">
                             <h5>Curso por Internet</h5>
                             <p>
-                              Sit consectetur adipiscing eiuse tempor incides
+                            Aprende muy
+facil con nuestros videos y pon manos a la obra!
                             </p>
                           </div>
                         </div>
@@ -376,7 +379,8 @@ export default function Partners() {
                           <div className="content">
                             <h5>Mentes creativas</h5>
                             <p>
-                              Sit consectetur adipiscing eiuse tempor incides
+                            Creaciones
+innovadoras en cada clase
                             </p>
                           </div>
                         </div>
@@ -389,7 +393,8 @@ export default function Partners() {
                           <div className="content">
                             <h5>Tutoriales en vídeo</h5>
                             <p>
-                              Sit consectetur adipiscing eiuse tempor incides
+                            Videos
+creados paso a paso muy faciles de seguir
                             </p>
                           </div>
                         </div>
@@ -402,7 +407,10 @@ export default function Partners() {
                           <div className="content">
                             <h5>Tutoría profesional</h5>
                             <p>
-                              Sit consectetur adipiscing eiuse tempor incides
+                            Camila es
+una diseñadora profesional de globos con diplomado del Instituto
+Decolovers, avalado por la
+Universidad de la Florida.
                             </p>
                           </div>
                         </div>
