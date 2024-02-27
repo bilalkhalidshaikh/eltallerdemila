@@ -129,7 +129,7 @@ esta information regularmente
                       required=""
                     />
                     <button type="submit" className="theme-btn">
-                    <a href="mailto:info@achrowebsolutions.com" style={{color:'white',display:'flex'}}>
+                    <a href="mailto:Eltallerdemilallc@gmail.com" style={{color:'white',display:'flex'}}>
                     Suscribir <i className="fas fa-arrow-right" />
                     </a>
                     </button>
