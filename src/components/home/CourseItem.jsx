@@ -101,6 +101,7 @@ export default function CourseItem() {
                     href={
                       "https://eltallerdemila.com/courses/balloon-decoration-masterclass/"
                     }
+                    target={"_blank"}
                   >
                     {/* <a > */}
                     Mini arco de globos orgánico
@@ -113,6 +114,7 @@ export default function CourseItem() {
                       href={
                         "https://eltallerdemila.com/courses/balloon-decoration-masterclass/"
                       }
+                      target={"_blank"}
                     >
                       <img
                         src="assets/images/testimonials/blank.png"
