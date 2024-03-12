@@ -6,7 +6,7 @@ import svgUrl from "assets/svgs/undraw_secure_login_pdn4.svg";
 import { Card, CardBody, Col, Row } from "reactstrap";
 
 import FirebaseContext from "context/FirebaseContext";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+// import StyledFirebaseAuth from "r eact-firebaseui/StyledFirebaseAuth";
 
 export default function login() {
   const router = useRouter();
