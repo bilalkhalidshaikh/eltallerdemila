@@ -267,6 +267,7 @@ export default function Hero() {
                   <a
                     className="theme-btn style-two text-dark bg-white mt-10"
                     href="https://eltallerdemila.com/all-courses/"
+                    target="_blank"
                   >
                     <span className="text-dark">our courses</span>{" "}
                     <i className="fas fa-arrow-right" />
