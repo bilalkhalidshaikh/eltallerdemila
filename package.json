@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "compile-sass": "node-sass src/assets/scss/style.scss src/assets/css/style.css --output-style compressed -w"
+    "compile-sass": "node-sass src/assets/scss/style.scss src/assets/css/style.css --output-style compressed -w",
+    "install": "npm install --legacy-peer-deps"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
