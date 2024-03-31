@@ -352,7 +352,8 @@ export default function Partners() {
                     <h1>
                       {" "}
                       {/* <b>Proporcionamos Life Coach de asesores expertos</b> */}
-                      <b>Clases Personalisadas con El Taller de Mila</b>
+                      {/* <b>Clases Personalisadas con El Taller de Mila</b> */}
+                      <b>Clases Personalizadas con El Taller de Mila</b>
                     </h1>
                   </div>
                   <div className="about-features">
