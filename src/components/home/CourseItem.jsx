@@ -132,6 +132,79 @@ export default function CourseItem() {
                 </ul>
               </div>
             </div>
+            <div className="coach-item-two wow fadeInUp delay-0-2s p-4 ml-8 container-fluid ">
+              {/* <div className="image">
+                <img src="assets/images/coachs/28.jpg" alt="Course" />
+              </div> */}
+              <div
+                className=" video-container image heightSet"
+                style={{ height: "300px" }}
+              >
+                <video
+                  className="course-video "
+                  src={
+                    "https://eltallerdemila.com/wp-content/uploads/2023/05/WhatsApp-Video-2024-02-13-at-22.57.46_f3bbf5fc-1.mp4"
+                  }
+                  onMouseOver={(event) => event.currentTarget.play()}
+                  onMouseOut={(event) => event.currentTarget.pause()}
+                  onFocus={(event) => event.currentTarget.play()}
+                  onBlur={(event) => event.currentTarget.pause()}
+                  loop
+                  // muted
+                  preload="none" // This helps to not load the video until needed
+                  nofullscreen
+                  poster="assets/images/coachs/80.jpg"
+                  // width={"400px"}
+                  // height={"100px"}
+                  style={{ borderRadius: "25px " }}
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="content">
+                <div className="ratting-star">
+                  <i className="fas fa-star" />
+                  <span>5</span>
+                </div>
+                <a>
+                  <span className="category">Ballon Design</span>
+                </a>
+                <h4>
+                  <Link
+                    href={
+                      "https://eltallerdemila.com/courses/tecnica-decupage-en-globos-foil/"
+                    }
+                    target={"_blank"}
+                  >
+                    {/* <a > */}
+                    Técnica decupage en globos foil
+                    {/* </a> */}
+                  </Link>
+                </h4>
+                <ul className="coach-footer">
+                  <li>
+                    <Link
+                      href={
+                        "https://eltallerdemila.com/courses/tecnica-decupage-en-globos-foil/"
+                      }
+                      target={"_blank"}
+                    >
+                      <img
+                        src="assets/images/testimonials/blank.png"
+                        alt="Author"
+                      />
+                    </Link>
+                    <span>
+                      By <b>Camila's.</b>
+                    </span>
+                  </li>
+                  <li>
+                    <i className="far fa-user" />
+                    <span>38 seats</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 &nbsp;
 &nbsp;
 &nbsp;
