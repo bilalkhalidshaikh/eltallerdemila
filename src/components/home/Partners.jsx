@@ -356,7 +356,7 @@ export default function Partners() {
                       <b>Tutoriales Gratis con El Taller de Mila</b>
                     </h1>
                   </div>
-                  {/* <div className="about-features">
+                  {/* <div className ="about-features">
                     <div className="row">
                       <div className="col-sm-6">
                         <div className="feature-item">
@@ -420,13 +420,13 @@ Universidad de la Florida.
                   </div> */}
                  <div className="responsive-iframe">
   <div
-    style={{ padding: "1% 0 0 0", position: "relative" }}
+    style={{ padding: "0 10 0 0", position: "relative",marginTop:'-120px' }}
     className="responsive-iframe-inner"
   >
     <iframe
       src="https://player.vimeo.com/video/956008310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-      width="1050"
-      height="720"
+      width="520"
+      height="520"
       frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
       title="8"
