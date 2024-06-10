@@ -335,7 +335,7 @@ export default function Partners() {
         </section>
         {/* Next About Sec */}
         {/*  */}
-        {/* About Section Start */}
+        {/* Free Tutorials Section */}
         <section className="about-section pt-130 rpt-100" id="about">
           <div className="container">
             <div className="row">
@@ -347,16 +347,16 @@ export default function Partners() {
                       style={{ fontSize: "15px", fontWeight: "12px" }}
                     >
                       {/* Sobre nosotras */}
-                      Aprende mucho mas!
+                      Tutoriales Gratis!
                     </span>
                     <h1>
                       {" "}
                       {/* <b>Proporcionamos Life Coach de asesores expertos</b> */}
                       {/* <b>Clases Personalisadas con El Taller de Mila</b> */}
-                      <b>Clases Personalizadas con El Taller de Mila</b>
+                      <b>Tutoriales Gratis con El Taller de Mila</b>
                     </h1>
                   </div>
-                  <div className="about-features">
+                  {/* <div className="about-features">
                     <div className="row">
                       <div className="col-sm-6">
                         <div className="feature-item">
@@ -412,6 +412,130 @@ creados paso a paso muy faciles de seguir
 una diseñadora profesional de globos con diplomado del Instituto
 Decolovers, avalado por la
 Universidad de la Florida.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
+                 <div className="responsive-iframe">
+  <div
+    style={{ padding: "1% 0 0 0", position: "relative" }}
+    className="responsive-iframe-inner"
+  >
+    <iframe
+      src="https://player.vimeo.com/video/956008310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      width="1050"
+      height="720"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+      title="8"
+    ></iframe>
+  </div>
+</div>
+
+                  <div className="about-btns">
+                    {/* <Link href="/about"> */}
+                    <a
+                      className="theme-btn style-two my-15 text-white"
+                      href="#blog"
+                    >
+                      Conozca más nosotros
+                      <i className="fas fa-arrow-right" />
+                    </a>
+                    {/* </Link> */}
+                    {/* <Link href="/faqs"> */}
+                    <a
+                      className="read-more text-dark text-decoration-none"
+                      href="#news"
+                    >
+                      Cómo funciona <i className="fas fa-arrow-right" />
+                    </a>
+                    {/* </Link> */}
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col-lg-5 align-self-end">
+                <div className="about-man rmb-75 wow fadeInLeft delay-0-2s">
+                  <img src="assets/images/hero/67.jpg" alt="Woman" />
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </section>
+        {/* Free Tutorials Section */}
+        {/* About Section Start */}
+        <section className="about-section pt-130 rpt-100" id="about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-7">
+                <div className="about-content rel z-2 pb-115 rpb-85 wow fadeInRight delay-0-2s">
+                  <div className="section-title mb-40">
+                    <span
+                      className="sub-title mb-25 pt-10 py-10"
+                      style={{ fontSize: "15px", fontWeight: "12px" }}
+                    >
+                      {/* Sobre nosotras */}
+                      Aprende mucho mas!
+                    </span>
+                    <h1>
+                      {" "}
+                      {/* <b>Proporcionamos Life Coach de asesores expertos</b> */}
+                      {/* <b>Clases Personalisadas con El Taller de Mila</b> */}
+                      <b>Clases Personalizadas con El Taller de Mila</b>
+                    </h1>
+                  </div>
+                  <div className="about-features">
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="feature-item">
+                          <div className="icon">
+                            <i className="fas fa-check" />
+                          </div>
+                          <div className="content">
+                            <h5>Curso por Internet</h5>
+                            <p>
+                              Aprende muy facil con nuestros videos y pon manos
+                              a la obra!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-sm-6">
+                        <div className="feature-item">
+                          <div className="icon">
+                            <i className="fas fa-check" />
+                          </div>
+                          <div className="content">
+                            <h5>Mentes creativas</h5>
+                            <p>Creaciones innovadoras en cada clase</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-sm-6">
+                        <div className="feature-item">
+                          <div className="icon">
+                            <i className="fas fa-check" />
+                          </div>
+                          <div className="content">
+                            <h5>Tutoriales en vídeo</h5>
+                            <p>
+                              Videos creados paso a paso muy faciles de seguir
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-sm-6">
+                        <div className="feature-item">
+                          <div className="icon">
+                            <i className="fas fa-check" />
+                          </div>
+                          <div className="content">
+                            <h5>Tutoría profesional</h5>
+                            <p>
+                              Camila es una diseñadora profesional de globos con
+                              diplomado del Instituto Decolovers, avalado por la
+                              Universidad de la Florida.
                             </p>
                           </div>
                         </div>
