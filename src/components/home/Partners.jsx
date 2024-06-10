@@ -336,7 +336,7 @@ export default function Partners() {
         {/* Next About Sec */}
         {/*  */}
         {/* Free Tutorials Section */}
-        <section className="about-section pt-130 rpt-100" id="about">
+        <section className="about-section pt-10 rpt-80" id="about">
           <div className="container">
             <div className="row">
               <div className="col-lg-7">
@@ -425,11 +425,13 @@ Universidad de la Florida.
   >
     <iframe
       src="https://player.vimeo.com/video/956008310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-      width="520"
+      width="340px"
       height="520"
       frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-      title="8"
+      title="Tutoriales Gratis!"
+      allowFullScreen
+      className="iframe"
     ></iframe>
   </div>
 </div>
@@ -465,7 +467,7 @@ Universidad de la Florida.
         </section>
         {/* Free Tutorials Section */}
         {/* About Section Start */}
-        <section className="about-section pt-130 rpt-100" id="about">
+        <section className="about-section pt-60 rpt-100" id="about">
           <div className="container">
             <div className="row">
               <div className="col-lg-7">
