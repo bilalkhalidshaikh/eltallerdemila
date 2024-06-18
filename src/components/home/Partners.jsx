@@ -336,11 +336,11 @@ export default function Partners() {
         {/* Next About Sec */}
         {/*  */}
         {/* Free Tutorials Section */}
-        <section className="about-section pt-10 rpt-80" id="about">
+        <section className="about-section pt-10 rpt-60" id="about">
           <div className="container">
             <div className="row">
               <div className="col-lg-7">
-                <div className="about-content rel z-2 pb-115 rpb-85 wow fadeInRight delay-0-2s">
+                <div className="about-content rel z-2 pb-115 rpb-65 wow fadeInRight delay-0-2s">
                   <div className="section-title mb-40">
                     <span
                       className="sub-title mb-25 pt-10 py-10"
@@ -420,7 +420,7 @@ Universidad de la Florida.
                   </div> */}
                  <div className="responsive-iframe">
   <div
-    style={{ padding: "0 10 0 0", position: "relative",marginTop:'-120px' }}
+    style={{ position: "relative",height:'420px' ,marginTop:'-160px'}}
     className="responsive-iframe-inner"
   >
     <iframe
