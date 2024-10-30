@@ -205,10 +205,58 @@ export default function CourseItem() {
                 </ul>
               </div>
             </div>
+            <div className="coach-item-two wow fadeInUp delay-0-4s p-4 ml-8 container-fluid ">
+              {/* <div className="image"> */}
+              <div className="image" style={{ height: "300px" }}>
+              <Link
+                    href={
+                      "https://eltallerdemila.com/courses/woven-pumpkin/"
+                    }
+                    target={"_blank"}
+                  >
+                <img src="assets/images/pumpkin.jpg" alt="Course" />
+                </Link>
+              </div>
+              <div className="content">
+                <div className="ratting-star">
+                  <i className="fas fa-star" />
+                  <span>5</span>
+                </div>
+                <a>
+                  <span className="category">Ballon Studies</span>
+                </a>
+                <h4>
+                <Link
+                    href={
+                      "https://eltallerdemila.com/courses/woven-pumpkin/"
+                    }
+                    target={"_blank"}
+                  >
+                    Woven Pumpkin
+                  </Link>
+                </h4>
+                <ul className="coach-footer">
+                  <li>
+                    <img
+                      src="assets/images/testimonials/blank.png"
+                      alt="Author"
+                    />
+                    <span>
+                      By <b>Milas.</b>
+                    </span>
+                  </li>
+                  <li>
+                    <i className="far fa-user" />
+                    <span>30 seats</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
+
             <div className="coach-item-two wow fadeInUp delay-0-4s p-4 ml-8 container-fluid ">
               {/* <div className="image"> */}
               <div className="image" style={{ height: "300px" }}>
@@ -242,6 +290,7 @@ export default function CourseItem() {
                 </ul>
               </div>
             </div>
+          
             {/* <div className="coach-item-two wow fadeInUp delay-0-6s p-4 ml-8">
               <div className="image">
                 <img src="assets/images/coachs/28.jpg" alt="Course" />
