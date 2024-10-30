@@ -122,7 +122,7 @@ export default function CourseItem() {
                       />
                     </Link>
                     <span>
-                      By <b>Camila's.</b>
+                      By <b>Camila</b>
                     </span>
                   </li>
                   <li>
@@ -195,7 +195,7 @@ export default function CourseItem() {
                       />
                     </Link>
                     <span>
-                      By <b>Camila's.</b>
+                      By <b>Camila</b>
                     </span>
                   </li>
                   <li>
@@ -242,7 +242,7 @@ export default function CourseItem() {
                       alt="Author"
                     />
                     <span>
-                      By <b>Milas.</b>
+                      By <b>Camila</b>
                     </span>
                   </li>
                   <li>
@@ -280,7 +280,7 @@ export default function CourseItem() {
                       alt="Author"
                     />
                     <span>
-                      By <b>Milas.</b>
+                      By <b>Camila</b>
                     </span>
                   </li>
                   <li>
